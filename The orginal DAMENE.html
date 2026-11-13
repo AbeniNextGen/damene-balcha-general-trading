@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.title">Damene Balcha General Trading</title>
+    <link rel="icon" href="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" type="image/png">
+    <meta name="description" content="Damene Balcha General Trading PLC - Building Materials, Dojamo Guest House, Phoenix Home Materials Representation, and Transport Vehicles Sales." data-i18n-meta="description:meta.desc">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#F7F3EC',
+                            200: '#EFE6D8'
+                        },
+                        navygreen: {
+                            50: '#f4f7ef',
+                            100: '#e5eed8',
+                            600: '#2d6a4f',
+                            800: '#1b4332',
+                            900: '#081c15',
+                        },
+                        terracotta: {
+                            400: '#bc8a5f',
+                            500: '#8b5a2b',
+                            600: '#6f4422',
+                            700: '#543319',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Dosis', 'Noto Sans Ethiopic', 'sans-serif'],
+                        heading: ['Fraunces', 'Noto Sans Ethiopic', 'serif'],
+                        display: ['Fjalla One', 'Noto Sans Ethiopic', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Fjalla+One&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,700;1,9..144,400&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Dosis', 'Noto Sans Ethiopic', sans-serif; 
+            background-color: #FDFBF7; 
+            color: #1e293b;
+        }
+        h1, h2, h3, h4 { font-family: 'Fraunces', 'Noto Sans Ethiopic', serif; }
+        .font-display { font-family: 'Fjalla One', 'Noto Sans Ethiopic', sans-serif; }
+        
+        /* Cursor Spotlight Tracker */
+        #cursor-spotlight {
+            pointer-events: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 90, 43, 0.08) 0%, rgba(27, 67, 50, 0) 70%);
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+            z-index: 9999;
+        }
+
+        /* Marquee Animation for Trusted By */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 20s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        .hero-slide {
+            transition: opacity 1.2s ease-in-out;
+        }
+
+        /* Language Switcher Styling */
+        .lang-btn {
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-cream-50 text-slate-800 antialiased flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <!-- Mouse Tracking Spotlight -->
+    <div id="cursor-spotlight"></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-navygreen-900 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-navygreen-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-terracotta-500"></i> +251 91 190 9229 / +251 91 110 5498</span>
+                <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-terracotta-500"></i> damenebalcha.gt@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+                <span class="text-slate-300" data-i18n="topbar.headquarters">Headquarters: Wolaita Sodo, South Ethiopia</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md shadow-sm border-b border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" onclick="showSection('home')" class="flex items-center gap-3 group">
+                    <img src="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" alt="Damene Balcha General Trading Logo" data-i18n-alt="brand.alt" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.src='https://placehold.co/200x80/1b4332/ffffff?text=Damene+Balcha'">
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-navygreen-800 tracking-wide uppercase">Damene Balcha</span>
+                        <span class="text-[11px] font-semibold text-terracotta-500 uppercase tracking-widest" data-i18n="brand.subtitle">General Trading</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+                    <button onclick="showSection('home')" class="nav-link px-3 py-2 text-sm font-semibold text-terracotta-500 rounded-md" id="nav-home" data-i18n="nav.home">Home</button>
+                    <button onclick="showSection('about')" class="nav-link px-3 py-2 text-sm font-semibold text-slate-700 hover:text-terracotta-500 transition-colors rounded-md" id="nav-about" data-i18n="nav.about">About Us</button>
+                    
+                    <!-- Dropdown Nav for Businesses -->
+                    <div class="relative group">
+                        <button class="nav-link px-3 py-2 text-sm font-semibold text-slate-700 group-hover:text-terracotta-500 transition-colors rounded-md inline-flex items-center gap-1">
+                            <span data-i18n="nav.businesses">Our Businesses</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div class="absolute left-0 top-full hidden group-hover:block w-72 bg-white shadow-xl rounded-xl border border-cream-200 p-2 z-50 transition-all">
+                            <button onclick="showSection('building')" class="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:bg-cream-100 hover:text-navygreen-800 flex items-center gap-2">
+                                <i class="fa-solid fa-trowel-bricks text-terracotta-500"></i> <span data-i18n="nav.div1">Building & Finishing Materials</span>
+                            </button>
+                            <button onclick="showSection('guest-house')" class="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:bg-cream-100 hover:text-navygreen-800 flex items-center gap-2">
+                                <i class="fa-solid fa-hotel text-terracotta-500"></i> <span data-i18n="nav.div2">Dojamo Guest House</span>
+                            </button>
+                            <button onclick="showSection('home-materials')" class="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:bg-cream-100 hover:text-navygreen-800 flex items-center gap-2">
+                                <i class="fa-solid fa-handshake-simple text-terracotta-500"></i> <span data-i18n="nav.div3">Home Materials</span>
+                            </button>
+                            <button onclick="showSection('vehicles')" class="w-full text-left px-3 py-2 rounded-lg text-xs font-semibold text-slate-800 hover:bg-cream-100 hover:text-navygreen-800 flex items-center gap-2">
+                                <i class="fa-solid fa-motorcycle text-terracotta-500"></i> <span data-i18n="nav.div4">Transport Vehicles Sell</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button onclick="showSection('contact')" class="nav-link px-3 py-2 text-sm font-semibold text-slate-700 hover:text-terracotta-500 transition-colors rounded-md" id="nav-contact" data-i18n="nav.contact">Contact Us</button>
+                </nav>
+
+                <!-- Header Language Switcher & CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <!-- Language Toggle Switcher -->
+                    <div class="flex items-center bg-cream-100 p-1 rounded-xl border border-cream-200">
+                        <button onclick="switchLanguage('en')" id="lang-btn-en" class="lang-btn px-3 py-1 rounded-lg text-xs font-bold transition-all bg-navygreen-800 text-white shadow-sm">
+                            EN
+                        </button>
+                        <span class="text-slate-300 px-0.5">|</span>
+                        <button onclick="switchLanguage('am')" id="lang-btn-am" class="lang-btn px-3 py-1 rounded-lg text-xs font-bold transition-all text-slate-600 hover:text-navygreen-800">
+                            አማ
+                        </button>
+                    </div>
+
+                    <button onclick="showSection('contact')" class="bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <span data-i18n="nav.getInTouch">Get in Touch</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button & Mobile Language Toggle -->
+                <div class="flex lg:hidden items-center gap-2">
+                    <div class="flex items-center bg-cream-100 p-0.5 rounded-lg border border-cream-200 mr-1">
+                        <button onclick="switchLanguage('en')" id="mobile-lang-btn-en" class="lang-btn px-2 py-1 rounded text-xs font-bold transition-all bg-navygreen-800 text-white">
+                            EN
+                        </button>
+                        <button onclick="switchLanguage('am')" id="mobile-lang-btn-am" class="lang-btn px-2 py-1 rounded text-xs font-bold transition-all text-slate-600">
+                            አማ
+                        </button>
+                    </div>
+                    <button id="mobile-menu-btn" type="button" class="p-2 rounded-md text-navygreen-800 hover:bg-cream-200 focus:outline-none" aria-label="Toggle Menu">
+                        <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-cream-200 px-4 pt-2 pb-6 space-y-2 shadow-inner">
+            <button onclick="showSection('home')" class="block w-full text-left px-3 py-2.5 rounded-md text-base font-semibold text-navygreen-800 hover:bg-cream-100" data-i18n="nav.home">Home</button>
+            <button onclick="showSection('about')" class="block w-full text-left px-3 py-2.5 rounded-md text-base font-semibold text-slate-700 hover:bg-cream-100" data-i18n="nav.about">About Us</button>
+            <div class="pl-3 space-y-1 border-l-2 border-navygreen-800">
+                <div class="text-xs font-bold text-terracotta-500 uppercase py-1" data-i18n="nav.businesses">Our Businesses</div>
+                <button onclick="showSection('building')" class="block w-full text-left px-3 py-2 rounded-md text-sm text-slate-700 hover:bg-cream-100" data-i18n="nav.div1">Building & Finishing Materials</button>
+                <button onclick="showSection('guest-house')" class="block w-full text-left px-3 py-2 rounded-md text-sm text-slate-700 hover:bg-cream-100">Dojamo Guest House</button>
+                <button onclick="showSection('home-materials')" class="block w-full text-left px-3 py-2 rounded-md text-sm text-slate-700 hover:bg-cream-100">Phoenix Home Materials</button>
+                <button onclick="showSection('vehicles')" class="block w-full text-left px-3 py-2 rounded-md text-sm text-slate-700 hover:bg-cream-100" data-i18n="nav.div4">Transport Vehicles Sell</button>
+            </div>
+            <button onclick="showSection('contact')" class="block w-full text-left px-3 py-2.5 rounded-md text-base font-semibold text-slate-700 hover:bg-cream-100" data-i18n="nav.contact">Contact Us</button>
+            <div class="pt-2">
+                <button onclick="showSection('contact')" class="w-full bg-terracotta-500 text-white py-3 rounded-xl font-semibold text-center shadow-md" data-i18n="nav.contactToday">Contact Us Today</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow">
+
+        <!-- ================= HOME SECTION ================= -->
+        <section id="section-home" class="page-section">
+            <!-- Hero Auto Slideshow Section -->
+            <div class="relative bg-navygreen-900 text-white overflow-hidden py-24 lg:py-32 min-h-[580px] flex items-center">
+                
+                <!-- Slide 1 -->
+                <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-100 duration-1000" id="slide-0" style="background-image: linear-gradient(rgba(8, 28, 21, 0.85), rgba(8, 28, 21, 0.9)), url('https://i.postimg.cc/KcrvbcQF/hero-(1).jpg');"></div>
+                
+                <!-- Slide 2 -->
+                <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0 duration-1000" id="slide-1" style="background-image: linear-gradient(rgba(8, 28, 21, 0.85), rgba(8, 28, 21, 0.9)), url('https://i.postimg.cc/9MC99j8K/DSC07261.jpg');"></div>                                                                                                                                                                                                                                                                                          
+
+                <!-- Slide 3 -->
+                <div class="hero-slide absolute inset-0 bg-cover bg-center opacity-0 duration-1000" id="slide-2" style="background-image: linear-gradient(rgba(8, 28, 21, 0.85), rgba(8, 28, 21, 0.9)), url('https://i.postimg.cc/SKW87J7N/IL.jpg');"></div>
+
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                    <div class="grid lg:grid-cols-12 gap-12 items-center">
+                        <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navygreen-800/80 border border-terracotta-500/40 text-xs font-semibold text-cream-100 uppercase tracking-widest backdrop-blur-sm">
+                                <i class="fa-solid fa-shield-halved text-terracotta-500"></i> <span data-i18n="hero.badge">Corporate Excellence & Reliability</span>
+                            </div>
+                            <h1 class="text-4xl sm:text-5xl lg:text-6xl text-white font-bold leading-tight">
+                                <span data-i18n="hero.titleLine1">Diverse Business Interests.</span> <br class="hidden sm:inline"/>
+                                <span class="text-terracotta-400 font-normal" data-i18n="hero.titleLine2">One Professional Partner.</span>
+                            </h1>
+                            <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed" data-i18n="hero.desc">
+                                Discover Damene Balcha General Trading and its diverse business activities in building and finishing materials, guest house hospitality, vehicle sales, and brand representation.
+                            </p>
+                            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <button onclick="showSection('building')" class="bg-terracotta-500 hover:bg-terracotta-600 text-white px-8 py-4 rounded-xl font-semibold text-base shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                    <span data-i18n="hero.btnExplore">Explore Our Businesses</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                <button onclick="showSection('contact')" class="bg-navygreen-800 hover:bg-navygreen-600 border border-slate-500 text-white px-8 py-4 rounded-xl font-semibold text-base transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                    <span data-i18n="hero.btnContact">Contact Us</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Slide Indicators -->
+                        <div class="lg:col-span-4 flex lg:flex-col justify-center items-center gap-3 pt-6 lg:pt-0">
+                            <button onclick="setSlide(0)" id="dot-0" class="w-12 h-2 rounded-full bg-terracotta-500 transition-all" aria-label="Slide 1"></button>
+                            <button onclick="setSlide(1)" id="dot-1" class="w-12 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" aria-label="Slide 2"></button>
+                            <button onclick="setSlide(2)" id="dot-2" class="w-12 h-2 rounded-full bg-white/40 hover:bg-white/70 transition-all" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TRUSTED ORGANIZATIONS – LARGE LOGO MARQUEE -->
+            <section class="relative py-12 md:py-16 overflow-hidden">
+                <div class="max-w-7xl mx-auto px-6 mb-10 text-center">
+                    <span class="text-xs md:text-sm font-bold tracking-[0.25em] uppercase text-[#1b4332]" data-i18n="trusted.badge">
+                        Our Trusted Network
+                    </span>
+
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-[#081c15] mt-3" data-i18n="trusted.title">
+                        Trusted by Leading Organizations
+                    </h2>
+                </div>
+
+                <div class="relative w-full overflow-hidden">
+                    <!-- Seamless Logo Track -->
+                    <div class="marquee-track flex w-max items-center">
+                        <!-- Original Logos -->
+                        <div class="marquee-group flex items-center gap-16 md:gap-24 px-8">
+                            <img class="partner-logo" src="https://i.postimg.cc/wvT45XJR/129919cfdbcb4864ef4cb104055a443e.jpg" alt="Organization 1" data-i18n-alt="trusted.org1">
+                            <img class="partner-logo" src="https://i.postimg.cc/bJWMzGDy/images-q-tbn-ANd9Gc-Sh-9k-Aj-7NQe-m947YCw-Fj3c9zsrf-Pc-k4gn-Z-7a7I65Q04qg3y-KRMf-PA-s-10.jpg" alt="Organization 2" data-i18n-alt="trusted.org2">
+                            <img class="partner-logo" src="https://i.postimg.cc/RVXK4JVd/WSU.jpg" alt="Organization 3" data-i18n-alt="trusted.org3">
+                            <img class="partner-logo" src="https://i.postimg.cc/rsT1Cc7N/9e51354a2ecd032985a6bf377f83e774.jpg" alt="Organization 4" data-i18n-alt="trusted.org4">
+                            <img class="partner-logo" src="https://i.postimg.cc/NjjHwngV/images-q-tbn-ANd9Gc-QRtgp3c-BWddfq7VNk-XAZqps-ORnjllq-Yq-Y1JTSZZvq-YA-s-10.jpg" alt="Organization 5" data-i18n-alt="trusted.org5">
+                            <img class="partner-logo" src="https://i.postimg.cc/Ss7RwLM0/newlogo4-150x150-png.webp" alt="Organization 6" data-i18n-alt="trusted.org6">
+                            <img class="partner-logo" src="https://i.postimg.cc/ZRFn1PdS/photo-2026-11-12-05-38-01.jpg" alt="Organization 7" data-i18n-alt="trusted.org7">
+                            <img class="partner-logo" src="https://i.postimg.cc/hjxZgvS5/download.png" alt="Organization 8" data-i18n-alt="trusted.org8">
+
+                        </div>
+
+                        <!-- Repeated Logos for Infinite Rotation -->
+                        <div class="marquee-group flex items-center gap-16 md:gap-24 px-8" aria-hidden="true">
+                            <img class="partner-logo" src="https://i.postimg.cc/wvT45XJR/129919cfdbcb4864ef4cb104055a443e.jpg" alt="Organization 1" data-i18n-alt="trusted.org1">
+                            <img class="partner-logo" src="https://i.postimg.cc/bJWMzGDy/images-q-tbn-ANd9Gc-Sh-9k-Aj-7NQe-m947YCw-Fj3c9zsrf-Pc-k4gn-Z-7a7I65Q04qg3y-KRMf-PA-s-10.jpg" alt="Organization 2" data-i18n-alt="trusted.org2">
+                            <img class="partner-logo" src="https://i.postimg.cc/RVXK4JVd/WSU.jpg" alt="Organization 3" data-i18n-alt="trusted.org3">
+                            <img class="partner-logo" src="https://i.postimg.cc/rsT1Cc7N/9e51354a2ecd032985a6bf377f83e774.jpg" alt="Organization 4" data-i18n-alt="trusted.org4">
+                            <img class="partner-logo" src="https://i.postimg.cc/NjjHwngV/images-q-tbn-ANd9Gc-QRtgp3c-BWddfq7VNk-XAZqps-ORnjllq-Yq-Y1JTSZZvq-YA-s-10.jpg" alt="Organization 5" data-i18n-alt="trusted.org5">
+                            <img class="partner-logo" src="https://i.postimg.cc/Ss7RwLM0/newlogo4-150x150-png.webp" alt="Organization 6" data-i18n-alt="trusted.org6">
+                            <img class="partner-logo" src="https://i.postimg.cc/ZRFn1PdS/photo-2026-11-12-05-38-01.jpg" alt="Organization 7" data-i18n-alt="trusted.org7">
+                            <img class="partner-logo" src="https://i.postimg.cc/hjxZgvS5/download.png" alt="Organization 8" data-i18n-alt="trusted.org8">
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    .marquee-track {
+                        width: max-content;
+                        animation: partner-scroll 35s linear infinite;
+                        will-change: transform;
+                    }
+                    .marquee-group {
+                        flex-shrink: 0;
+                    }
+                    .partner-logo {
+                        width: 260px;
+                        height: 150px;
+                        object-fit: contain;
+                        flex-shrink: 0;
+                        transition: transform 0.35s ease;
+                    }
+                    .partner-logo:hover {
+                        transform: scale(1.12);
+                    }
+                    @keyframes partner-scroll {
+                        from { transform: translateX(0); }
+                        to { transform: translateX(-50%); }
+                    }
+                    .marquee-track:hover {
+                        animation-play-state: paused;
+                    }
+                    @media (max-width: 768px) {
+                        .partner-logo {
+                            width: 190px;
+                            height: 115px;
+                        }
+                        .marquee-group {
+                            gap: 48px;
+                        }
+                    }
+                    @media (prefers-reduced-motion: reduce) {
+                        .marquee-track {
+                            animation: none;
+                        }
+                    }
+                </style>
+            </section>
+
+            <!-- Business Pillars Overview Section -->
+            <div class="py-20 bg-cream-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-navygreen-800 tracking-tight" data-i18n="divisions.title">Four Core Business Divisions</h2>
+                        <div class="w-16 h-1 bg-terracotta-500 mx-auto my-4 rounded-full"></div>
+                        <p class="text-slate-600 text-base font-light" data-i18n="divisions.subtitle">Operating with a commitment to corporate governance, legal transparency, and operational reliability.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                       <!-- Division 1 -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+                            <div class="h-44 bg-cream-100 relative overflow-hidden">
+                                <img src="https://i.postimg.cc/9MC99j8K/DSC07261.jpg" alt="Building Materials" data-i18n-alt="div1.imgAlt" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/600x300/1b4332/ffffff?text=Building+Materials'" />
+                                <div class="absolute top-3 right-3 bg-navygreen-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" data-i18n="div1.badge">Division 01</div>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navygreen-800 group-hover:text-terracotta-500 transition-colors" data-i18n="div1.title">Building & Finishing Materials</h3>
+                                    <p class="text-slate-600 text-xs mt-2 leading-relaxed" data-i18n="div1.desc">
+                                        Raw construction supplies (sand, gravel, stone) and high-end finishing goods distribution.
+                                    </p>
+                                </div>
+                                <button onclick="showSection('building')" class="w-full text-terracotta-500 hover:text-terracotta-700 font-semibold text-xs inline-flex items-center justify-between border-t border-cream-100 pt-3">
+                                    <span data-i18n="btn.learnMore">Learn More</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Division 2 -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+                            <div class="h-44 bg-cream-100 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://i.postimg.cc/mrcyxHyK/photo-1-2026-10-29-05-36-21.jpg" alt="Dojamo Guest House" data-i18n-alt="div2.imgAlt" class="h-full w-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/400x250/1b4332/ffffff?text=Dojamo+Guest+House'">
+                                <div class="absolute top-3 right-3 bg-navygreen-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" data-i18n="div2.badge">Division 02</div>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navygreen-800 group-hover:text-terracotta-500 transition-colors">Dojamo Guest House</h3>
+                                    <p class="text-slate-600 text-xs mt-2 leading-relaxed" data-i18n="div2.desc">
+                                        Quality lodging accommodations focused on comfort, guest security, and warm service.
+                                    </p>
+                                </div>
+                                <button onclick="showSection('guest-house')" class="w-full text-terracotta-500 hover:text-terracotta-700 font-semibold text-xs inline-flex items-center justify-between border-t border-cream-100 pt-3">
+                                    <span data-i18n="btn.bookStay">Book Stay</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Division 3 -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+                            <div class="h-44 bg-cream-100 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://i.postimg.cc/cJKBqncG/photo-3-2026-10-29-05-36-21.jpg" alt="Phoenix Representation" data-i18n-alt="div3.imgAlt" class="h-full w-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/400x250/1b4332/ffffff?text=Phoenix+Representation'">
+                                <div class="absolute top-3 right-3 bg-navygreen-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" data-i18n="div3.badge">Representation</div>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                                <div>
+                                    <div class="inline-block bg-cream-200 text-slate-700 text-[10px] font-semibold px-2 py-0.5 rounded mb-1" data-i18n="div3.tag">Independent Brand</div>
+                                    <h3 class="text-lg font-bold text-navygreen-800 group-hover:text-terracotta-500 transition-colors">Phoenix Home Materials</h3>
+                                    <p class="text-slate-600 text-xs mt-2 leading-relaxed" data-i18n="div3.desc">
+                                        Authorized commercial representation agreement for independent Phoenix home fixtures.
+                                    </p>
+                                </div>
+                                <button onclick="showSection('home-materials')" class="w-full text-terracotta-500 hover:text-terracotta-700 font-semibold text-xs inline-flex items-center justify-between border-t border-cream-100 pt-3">
+                                    <span data-i18n="btn.repScope">Representation Scope</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Division 4 -->
+                        <div class="bg-white rounded-2xl shadow-sm border border-cream-200 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all flex flex-col group">
+                            <div class="h-44 bg-cream-100 relative overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://i.postimg.cc/SKW87J7N/ey-Jp-ZCI6Im1f-Nm-Fl-ZWFm-YTg3ZDIw-ODE5MTll-NDRm-ODgz-NWZh-NWE5Yz-Q6c2Vka-W1lbn-Q6Ly9m-ODUw-OGEz-ZDc.jpg" alt="Transport Vehicles Sell" data-i18n-alt="div4.imgAlt" class="h-full w-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/400x250/1b4332/ffffff?text=Vehicles+Sell'">
+                                <div class="absolute top-3 right-3 bg-navygreen-800 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" data-i18n="div4.badge">Division 04</div>
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                                <div>
+                                    <h3 class="text-lg font-bold text-navygreen-800 group-hover:text-terracotta-500 transition-colors" data-i18n="div4.title">Transport Vehicles Sell</h3>
+                                    <p class="text-slate-600 text-xs mt-2 leading-relaxed" data-i18n="div4.desc">
+                                        Sales and distribution of two-wheelers and three-wheelers (motorbikes, bajajs) for transport needs.
+                                    </p>
+                                </div>
+                                <button onclick="showSection('vehicles')" class="w-full text-terracotta-500 hover:text-terracotta-700 font-semibold text-xs inline-flex items-center justify-between border-t border-cream-100 pt-3">
+                                    <span data-i18n="btn.viewVehicles">View Vehicles</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHY CHOOSE US SECTION (Verified Strengths) -->
+            <div class="py-16 bg-white border-t border-cream-200">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-12">
+                        <h2 class="text-3xl font-bold text-navygreen-800" data-i18n="why.title">Why Partner With Us</h2>
+                        <p class="text-slate-600 text-sm mt-2" data-i18n="why.subtitle">Verified operational principles guiding all four commercial divisions.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-3 gap-8">
+                        <div class="p-6 bg-cream-50 rounded-2xl border border-cream-200 text-center space-y-3">
+                            <div class="w-12 h-12 rounded-xl bg-navygreen-800 text-white flex items-center justify-center mx-auto text-xl">
+                                <i class="fa-solid fa-file-contract"></i>
+                            </div>
+                            <h3 class="font-bold text-navygreen-800 text-base" data-i18n="why.p1Title">Legal Transparency</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed" data-i18n="why.p1Desc">Strict adherence to verified representation agreements and corporate contracts.</p>
+                        </div>
+                        <div class="p-6 bg-cream-50 rounded-2xl border border-cream-200 text-center space-y-3">
+                            <div class="w-12 h-12 rounded-xl bg-navygreen-800 text-white flex items-center justify-center mx-auto text-xl">
+                                <i class="fa-solid fa-boxes-packing"></i>
+                            </div>
+                            <h3 class="font-bold text-navygreen-800 text-base" data-i18n="why.p2Title">Quality Assurance</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed" data-i18n="why.p2Desc">Sourcing high-grade materials and maintained commercial vehicles.</p>
+                        </div>
+                        <div class="p-6 bg-cream-50 rounded-2xl border border-cream-200 text-center space-y-3">
+                            <div class="w-12 h-12 rounded-xl bg-navygreen-800 text-white flex items-center justify-center mx-auto text-xl">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <h3 class="font-bold text-navygreen-800 text-base" data-i18n="why.p3Title">Client-Centric Service</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed" data-i18n="why.p3Desc">Responsive communication desk across hospitality, logistics, and trading.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT US SECTION ================= -->
+        <section id="section-about" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-4xl font-bold tracking-tight" data-i18n="about.pageTitle">About Damene Balcha General Trading</h1>
+                    <p class="text-slate-200 mt-2 text-base font-light" data-i18n="about.pageSubtitle">Corporate structure, operational ethos, and legal clarity.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid lg:grid-cols-12 gap-12 items-start">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-cream-200">
+                            <h2 class="text-2xl font-bold text-navygreen-800 mb-4" data-i18n="about.overviewTitle">Company Overview</h2>
+                            <p class="text-slate-700 leading-relaxed text-sm mb-4">
+                                <strong data-i18n="about.p1Bold">Damene Balcha General Trading </strong> <span data-i18n="about.p1Text">is a multi-sector Ethiopian commercial enterprise committed to quality, operational compliance, and long-term business partnerships.</span>
+                            </p>
+                            <p class="text-slate-700 leading-relaxed text-sm mb-4" data-i18n="about.p2">
+                                Headquartered in Wolaita Sodo, South Ethiopia the company manages four distinct activities: trading construction and finishing materials, running Dojamo Guest House, selling two and three-wheeled transport vehicles, and acting as official representative for Phoenix Home Materials.
+                            </p>
+                            <div class="border-l-4 border-terracotta-500 pl-4 py-3 bg-cream-50 rounded-r-xl my-6">
+                                <p class="text-navygreen-800 font-medium italic text-sm" data-i18n="about.quote">
+                                    "Our objective is to deliver value across trading, hospitality, and corporate representations while maintaining absolute legal clarity and customer trust."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Core Values Grid -->
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-5 rounded-xl border border-cream-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-navygreen-50 text-navygreen-800 flex items-center justify-center font-bold mb-3">
+                                    <i class="fa-solid fa-handshake text-lg text-terracotta-500"></i>
+                                </div>
+                                <h3 class="font-bold text-navygreen-800 text-base" data-i18n="about.v1Title">Reliable Partnerships</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="about.v1Desc">Fostering transparent relationships with clients and representation partners.</p>
+                            </div>
+
+                            <div class="bg-white p-5 rounded-xl border border-cream-200 shadow-sm">
+                                <div class="w-10 h-10 rounded-lg bg-navygreen-50 text-navygreen-800 flex items-center justify-center font-bold mb-3">
+                                    <i class="fa-solid fa-layer-group text-lg text-terracotta-500"></i>
+                                </div>
+                                <h3 class="font-bold text-navygreen-800 text-base" data-i18n="about.v2Title">Multisector Reach</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="about.v2Desc">Diversified operations across construction, vehicle trading, and hospitality.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Entity Card -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-cream-200 text-center">
+                            <img src="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" alt="Damene Balcha Official Logo" data-i18n-alt="about.cardLogoAlt" class="h-20 mx-auto object-contain mb-4" onerror="this.src='https://placehold.co/200x100/1b4332/ffffff?text=Logo'">
+                            <h3 class="font-bold text-navygreen-800 text-lg">Damene Balcha General Trading</h3>
+                            <p class="text-xs text-slate-500 mb-4" data-i18n="about.cardDetailsTitle">Corporate Office Details</p>
+                            <div class="divide-y divide-cream-200 text-left text-xs">
+                                <div class="py-3 flex justify-between">
+                                    <span class="text-slate-500" data-i18n="about.lblStructure">Structure</span>
+                                    <span class="font-semibold text-slate-800" data-i18n="about.valStructure">Private Limited Company</span>
+                                </div>
+                                <div class="py-3 flex justify-between">
+                                    <span class="text-slate-500" data-i18n="about.lblLocation">Location</span>
+                                    <span class="font-semibold text-slate-800" data-i18n="about.valLocation">Wolaita Sodo, South Ethiopia</span>
+                                </div>
+                                <div class="py-3 flex justify-between">
+                                    <span class="text-slate-500" data-i18n="about.lblDivisions">Active Divisions</span>
+                                    <span class="font-semibold text-slate-800" data-i18n="about.valDivisions">4 Business Lines</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BUILDING & FINISHING MATERIALS SECTION ================= -->
+        <section id="section-building" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navygreen-900 text-xs font-semibold text-slate-300 mb-2">
+                            <i class="fa-solid fa-city text-terracotta-500"></i> <span data-i18n="bldg.badge">Division One</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-bold" data-i18n="bldg.pageTitle">Building & Finishing Materials Trading</h1>
+                        <p class="text-slate-300 text-base font-light mt-1" data-i18n="bldg.pageSubtitle">Sourcing, logistics, and bulk construction supply.</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl shrink-0 shadow-inner">
+                        <img src="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" alt="Building Division Logo" data-i18n-alt="bldg.logoAlt" class="h-16 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="bldg.sec1Title">High-Quality Finishing Materials</h2>
+                    <p class="text-slate-600 text-sm mb-6" data-i18n="bldg.sec1Subtitle">High Quality finishing materials</p>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Porcelain Floor Tiles (60x60 cm) -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/50gNLvG1/shopping-q-tbn-ANd9Gc-QW-t-3URMDF4JRg-IWor6z-Us-Jni-R071k-Xq-XVn2ZH9Tb-Ad-QX3m-P6ZY-0cl-Dm2T1XQCE6w.webp" alt="Porcelain Floor Tiles (60x60 cm)" data-i18n-alt="prod.porcelainAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.porcelainTitle">Porcelain Floor Tiles (60x60 cm)</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.porcelainDesc">Durable, stain-resistant 60x60 cm porcelain tiles for premium residential and commercial flooring.</p>
+                        </div>
+                        <!-- Ordinary Portland Cement (42.5N) -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/Yq5k4b9W/images-q-tbn-ANd9Gc-TP2IOQ6z4P6b-Fq-R3z-MDxu-Evp-Pg-DTOUx5AO97m-Qy-Vb7GQ-s-10.jpg" alt="Ordinary Portland Cement (42.5N)" data-i18n-alt="prod.opcAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.opcTitle">Ordinary Portland Cement (42.5N)</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.opcDesc">High-strength 42.5N Ordinary Portland Cement engineered for robust structural load-bearing and concrete works.</p>
+                        </div>
+                        <!-- Glazed Ceramic Wall Tiles -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/Ssv3BxYf/images-q-tbn-ANd9Gc-QTFd-ITMb-UY8VDSyz-FXSv-U4xc-n4ee5p2RAWx-Q8yxl5j-A-s-10.jpg" alt="Glazed Ceramic Wall Tiles" data-i18n-alt="prod.ceramicAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.ceramicTitle">Glazed Ceramic Wall Tiles</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.ceramicDesc">Aesthetic and easy-to-clean glazed ceramic tiles designed specifically for interior walls and backsplashes.</p>
+                        </div>
+                        <!-- Sanitaryware Toilet & Washbasin Set -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/vTDMnKfD/images-q-tbn-ANd9Gc-RLes-Rp-KS-IOk-VJtyz-Bc-I4U-0CMmp-UJefn-LKDZvq-SYlew-s-10.jpg" alt="Sanitaryware Toilet & Washbasin Set" data-i18n-alt="prod.sanitaryAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.sanitaryTitle">Sanitaryware Toilet & Washbasin Set</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.sanitaryDesc">Complete bathroom sanitaryware sets including water-efficient toilets and matching ceramic washbasins.</p>
+                        </div>
+                        <!-- Stainless Steel Plumbing Valves & Pipe Fittings -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/mDgGxnXr/images-q-tbn-ANd9Gc-QVBs3ny0I0JXPu2k-Ic-Srv-YDxw0wuwl8Tzy-ULLnw3x12w-s-10.jpg" alt="Stainless Steel Plumbing Valves & Pipe Fittings" data-i18n-alt="prod.plumbingAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.plumbingTitle">Stainless Steel Plumbing Valves & Pipe Fittings</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.plumbingDesc">Corrosion-resistant stainless steel valves and plumbing fittings for reliable water supply networks.</p>
+                        </div>
+                        <!-- Existing items -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/TPf3L6G4/images.jpg" alt="Deformed steel rebar Grade 75" data-i18n-alt="prod.rebarAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.rebarTitle">Deformed Steel Rebar Grade 75</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.rebarDesc">High-strength ribbed steel bars used to reinforce concrete and improve structural load-bearing capacity.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/hjqJbq4d/photo-1504307651254-35680f356dfd-auto-format-fit-crop-w-800-q-80.jpg" alt="Building materials" data-i18n-alt="prod.bldgMatAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.bldgMatTitle">Building Materials</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.bldgMatDesc">Essential construction supplies such as cement, sand, aggregates, and blocks for building and infrastructure projects.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/rwnqmtn5/kabels-elektra-elektraver.png" alt="Electric cables and wires" data-i18n-alt="prod.cablesAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.cablesTitle">Electric Cables and Wires</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.cablesDesc">Electrical conductors that carry power safely through residential, commercial, and industrial installations.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/h4Z8LKCy/no-brand-cat-tembok-jotun-raw-canvas-10961-galon-full04-rx0hfrxr.jpg" alt="Paints and Jotun paints" data-i18n-alt="prod.paintsAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.paintsTitle">Paints / Jotun Paints</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.paintsDesc">Decorative and protective coatings that add color to surfaces and help protect them from weather and wear.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/QxtkR2TP/6063-T5-Aluminum-Glass-Frame-Aluminium-Extrusion-Profile-for-South-Africa-Windows.webp" alt="Aluminium profiles" data-i18n-alt="prod.alumAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.alumTitle">Aluminium Profiles</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.alumDesc">Lightweight, durable extruded sections commonly used for windows, doors, facades, and architectural fittings.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/MK4hF2T2/download.jpg" alt="Granite and marble slabs" data-i18n-alt="prod.graniteAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.graniteTitle">Granite and Marbles</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.graniteDesc">Natural stones valued for their durability and elegant finish in flooring, countertops, wall cladding, and decoration.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/J7ywczrb/Natural-Bulk-Bitumen-60-70-Liquid-Asphalt-Bitumen-High-Polymer-Modified-Asphalt-Bitumen.avif" alt="Waterproofing solutions" data-i18n-alt="prod.waterproofAlt" class="h-44 w-full object-cover rounded-lg mb-3" loading="lazy">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="prod.waterproofTitle">Waterproofing Solutions</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="prod.waterproofDesc">Water-resistant membranes and coatings that help prevent leakage and protect buildings from moisture damage.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="bldg.sec2Title">Construction Raw Supplies</h2>
+                    <p class="text-slate-600 text-sm mb-6" data-i18n="bldg.sec2Subtitle">High-grade raw materials for building foundation and structure.</p>
+                    <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/mkt5mt3v/images.jpg" alt="Sand" data-i18n-alt="raw.sandAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="raw.sandTitle">Sand & River Aggregates</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="raw.sandDesc">Screened river sand and plaster sand for masonry and concrete mixing.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/zGj4XZft/images.jpg" alt="Stone" data-i18n-alt="raw.stoneAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="raw.stoneTitle">Basalt Stone</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="raw.stoneDesc">Crushed stone foundations and heavy slab casting.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/HLFzTBQg/images.jpg" alt="Pebbles" data-i18n-alt="raw.pebblesAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="raw.pebblesTitle">Concreate Pebbles</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="raw.pebblesDesc">Crushed stone pebbles for mixing concreate.</p>
+                        </div>
+                        <!-- Building Cement -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/DyLfPtRL/images-q-tbn-ANd9Gc-TA9gb-z-Kb-EPl-O56URl6E0m-Qq-ZMEj78wsth82dz-K-f7Gw-s-10.jpg" alt="Building Cement" data-i18n-alt="raw.cementAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="raw.cementTitle">Building Cement</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="raw.cementDesc">Bulk and bagged high-grade building cement for structural casting and masonry.</p>
+                        </div>
+                        <!-- Solid concrete blocks -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/t49bt73R/images-q-tbn-ANd9Gc-Sn7et1DAevg-AVccw-Bokks-GSr-Qf9lcdovo02K7y-v-MV5A-s-10.jpg" alt="Solid concrete blocks" data-i18n-alt="raw.blocksAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="raw.blocksTitle">Solid concrete blocks</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="raw.blocksDesc">High-density solid concrete blocks for durable load-bearing walls and partitions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="bldg.sec3Title">External Supplies</h2>
+                    <p class="text-slate-600 text-sm mb-6" data-i18n="bldg.sec3Subtitle">Building section-vehicles and machinery rental.</p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/jdXrCJg1/car-6ac15406afa8b.jpg" alt="Dump Truck" data-i18n-alt="ext.truckAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="ext.truckTitle">Building Dump-Truck</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="ext.truckDesc">powerfull constraction vehicles rental Service</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/Gh9jTWqL/images.jpg" alt="Wheeled Loader" data-i18n-alt="ext.loaderAlt" class="h-40 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="ext.loaderTitle">Wheeled Loader</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="ext.loaderDesc">heavy constraction Loader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Division Specific Map & Contact -->
+                <div class="bg-white border border-cream-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-navygreen-800 mb-4" data-i18n="bldg.depotTitle">Building Materials Depot Location</h3>
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 rounded-xl overflow-hidden h-60 bg-cream-100">
+                            <iframe title="Building Depot Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d877.8058772502576!2d37.76479263672337!3d6.858033468826607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b1b087c053366f%3A0x7eb090ac40d4f882!2sVQ57%2B4W7%2C%20Sodo!5e1!3m2!1sen!2set!4v1794042209131!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="lg:col-span-5 space-y-4 text-xs">
+                            <div class="p-4 bg-cream-50 rounded-xl space-y-2">
+                                <div class="font-bold text-navygreen-800"><i class="fa-solid fa-location-dot text-terracotta-500 mr-1"></i> <span data-i18n="lbl.location">Location</span></div>
+                                <p class="text-slate-600" data-i18n="bldg.depotAddr">21 Mazoria St. Mary Church Avenue, Wolaita Sodo, South Ethiopia</p>
+                                <div class="font-bold text-navygreen-800 pt-2"><i class="fa-solid fa-phone text-terracotta-500 mr-1"></i> <span data-i18n="lbl.directLine">Direct Line</span></div>
+                                <p class="text-slate-600">+251 91 190 9229 / +251 91 110 5498</p>
+                            </div>
+                            <button onclick="showSection('contact')" class="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3 rounded-xl transition-colors shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span data-i18n="bldg.btnInquire">Inquire for Bulk Order</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DOJAMO GUEST HOUSE SECTION ================= -->
+        <section id="section-guest-house" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navygreen-900 text-xs font-semibold text-slate-300 mb-2">
+                            <i class="fa-solid fa-hotel text-terracotta-500"></i> <span data-i18n="guest.badge">Division Two</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-bold"data-i18n="guest.pagetitle">Dojamo Guest House</h1>
+                        <p class="text-slate-300 text-base font-light mt-1" data-i18n="guest.pageSubtitle">Comfortable Guest Accommodations & Hospitality Services.</p>
+                    </div>
+                    <div class="bg-white p-2 rounded-xl shrink-0 shadow-inner">
+                        <img src="https://i.postimg.cc/mrcyxHyK/photo-1-2026-10-29-05-36-21.jpg" alt="Dojamo Guest House Logo" data-i18n-alt="guest.logoAlt" class="h-16 w-auto object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-10">
+                <div class="bg-white border border-cream-200 rounded-2xl p-8 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+                    <div class="space-y-4 max-w-2xl">
+                        <h2 class="text-2xl font-bold text-navygreen-800" data-i18n="guest.welcomeTitle">Welcoming Hospitality Experience</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed" data-i18n="guest.welcomeDesc">
+                            Dojamo Guest House delivers peaceful, fully equipped lodging for corporate guests, international travelers, and long-term residents in Addis Ababa.
+                        </p>
+                        <a href="http://www.dojamoguesthouse.com.et" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all text-xs">
+                            <span data-i18n="guest.btnBook">Book Your Stay (Official Site)</span>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="relative w-full lg:w-96 h-60">
+                        <!-- Background Image -->
+                        <img src="https://i.postimg.cc/fRCgQGWN/IMG-1278.avif" alt="Guest House Rooms" data-i18n-alt="guest.roomAlt1" class="absolute top-0 left-0 w-4/5 h-48 object-cover rounded-xl shadow-sm">
+                        <!-- Layered Image -->
+                        <img src="https://i.postimg.cc/FKD6Q2Zb/IMG-1277.avif" alt="Guest House Rooms" data-i18n-alt="guest.roomAlt2" class="absolute bottom-0 right-0 w-4/5 h-48 object-cover rounded-xl shadow-lg border-4 border-white">
+                    </div>
+                </div>
+
+                <!-- Modern Overlapping Layered 3D Image Gallery -->
+                <div class="bg-white border border-cream-200 rounded-2xl p-6 sm:p-10 shadow-sm overflow-hidden">
+                    <div class="text-center max-w-2xl mx-auto mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-terracotta-500" data-i18n="guest.galleryBadge">Visual Tour</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-navygreen-800 mt-1" data-i18n="guest.galleryTitle">Suites & Accommodation Gallery</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm mt-2" data-i18n="guest.gallerySubtitle">Click or hover over any card to explore our serene rooms, lounges, and guest facilities.</p>
+                    </div>
+
+                    <div class="relative w-full h-[270px] sm:h-[360px] md:h-[430px] flex items-center justify-center select-none my-4" id="dojamo-layered-gallery">
+                        <!-- Navigation Controls -->
+                        <button onclick="rotateDojamoGallery(-1)" aria-label="Previous Image" class="absolute left-1 sm:left-4 z-50 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-navygreen-800 text-navygreen-800 hover:text-white shadow-lg border border-cream-200 flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fa-solid fa-chevron-left text-sm"></i>
+                        </button>
+                        <button onclick="rotateDojamoGallery(1)" aria-label="Next Image" class="absolute right-1 sm:right-4 z-50 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-navygreen-800 text-navygreen-800 hover:text-white shadow-lg border border-cream-200 flex items-center justify-center transition-all duration-300 hover:scale-110">
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </button>
+
+                        <!-- 7 Stacked Overlapping Cards -->
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="0" onclick="focusDojamoCard(0)">
+                            <img src="https://i.postimg.cc/fRCgQGWN/IMG-1278.avif" alt="Executive Suite" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap1">Executive Guest Suite</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="1" onclick="focusDojamoCard(1)">
+                            <img src="https://i.postimg.cc/FKD6Q2Zb/IMG-1277.avif" alt="Deluxe Bedroom" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap2">Green morning quality</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="2" onclick="focusDojamoCard(2)">
+                            <img src="https://i.postimg.cc/vZrV0GPV/IMG-1274.avif" alt="Comfort Bedding" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap3">Premium Comfort Bedding</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="3" onclick="focusDojamoCard(3)">
+                            <img src="https://i.postimg.cc/mrcyxHyK/photo-1-2026-10-29-05-36-21.jpg" alt="Dojamo Main Lounge" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap4">Dojamo Hospitality & Exterior</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="4" onclick="focusDojamoCard(4)">
+                            <img src="https://i.postimg.cc/rFtnFtpZ/IMG-9515.avif" alt="Modern Interior" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap5">Serene Living Quarters</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="5" onclick="focusDojamoCard(5)">
+                            <img src="https://i.postimg.cc/Kv26w2F0/IMG-1268.avif" alt="Fresh Linens" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap6">Fresh Cotton Linens & Towels</p>
+                            </div>
+                        </div>
+
+                        <div class="dojamo-gallery-card absolute rounded-2xl overflow-hidden shadow-2xl border-4 border-white cursor-pointer transition-all duration-500 ease-out" data-index="6" onclick="focusDojamoCard(6)">
+                            <img src="https://i.postimg.cc/RVy0K24W/IMG-1270.avif" alt="Modern Bath" class="w-full h-full object-cover">
+                            <div class="card-caption absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-3 sm:p-4 text-white transition-opacity duration-300">
+                                <p class="font-bold text-xs sm:text-sm" data-i18n="guest.galCap7">En-Suite Modern Amenities</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Dots -->
+                    <div class="flex justify-center items-center gap-2 mt-4" id="dojamo-gallery-dots">
+                        <button onclick="focusDojamoCard(0)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 1"></button>
+                        <button onclick="focusDojamoCard(1)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 2"></button>
+                        <button onclick="focusDojamoCard(2)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 3"></button>
+                        <button onclick="focusDojamoCard(3)" class="dojamo-dot w-6 h-2.5 rounded-full bg-terracotta-500 transition-all" aria-label="Image 4"></button>
+                        <button onclick="focusDojamoCard(4)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 5"></button>
+                        <button onclick="focusDojamoCard(5)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 6"></button>
+                        <button onclick="focusDojamoCard(6)" class="dojamo-dot w-2.5 h-2.5 rounded-full bg-cream-200 transition-all" aria-label="Image 7"></button>
+                    </div>
+                </div>
+
+                <!-- Guest House Map & Contact -->
+                <div class="bg-white border border-cream-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-navygreen-800 mb-4" data-i18n="guest.mapTitle">Dojamo Guest House Map & Location</h3>
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 rounded-xl overflow-hidden h-60 bg-cream-100">
+                            <iframe title="Guest House Map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d876.9731489295561!2d37.75797751369923!3d6.853412086364135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2set!4v1794055602153!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="lg:col-span-5 space-y-4 text-xs">
+                            <div class="p-4 bg-cream-50 rounded-xl space-y-2">
+                                <div class="font-bold text-navygreen-800"><i class="fa-solid fa-hotel text-terracotta-500 mr-1"></i> <span data-i18n="lbl.address">Address</span></div>
+                                <p class="text-slate-600" data-i18n="guest.addr">Sodo Prision Avenue, Wolaita Sodo, South Ethiopia</p>
+                                <div class="font-bold text-navygreen-800 pt-2"><i class="fa-solid fa-globe text-terracotta-500 mr-1"></i> <span data-i18n="lbl.portal">Official Portal</span></div>
+                                <p class="text-terracotta-500 font-semibold">www.dojamoguesthouse.com.et</p>
+                                <div class="font-bold text-navygreen-800 pt-2"><i class="fa-solid fa-phone text-terracotta-500 mr-1"></i> <span data-i18n="lbl.phone">Phone number</span></div>
+                                <p class="text-terracotta-500 font-semibold">+251 46 180 2444 / +251 91 905 9353</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PHOENIX HOME MATERIALS SECTION ================= -->
+        <section id="section-home-materials" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navygreen-900 text-xs font-semibold text-slate-300 mb-2">
+                            <i class="fa-solid fa-handshake-simple text-terracotta-500"></i> <span data-i18n="phoenix.badge">Corporate Representation</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-bold"data-i18n="phoenix.pagetitle">Phoenix Home Materials</h1>
+                        <p class="text-slate-300 text-base font-light mt-1" data-i18n="phoenix.pageSubtitle">Authorized commercial representation agreement.</p>
+                    </div>
+                    <div class="bg-white p-2 rounded-xl shrink-0 shadow-inner">
+                        <img src="https://i.postimg.cc/cJKBqncG/photo-3-2026-10-29-05-36-21.jpg" alt="Phoenix Representation" data-i18n-alt="phoenix.logoAlt" class="h-16 w-auto object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-10">
+                <!-- Legal Clarification Banner -->
+                <div class="bg-white border-2 border-terracotta-500/30 rounded-2xl p-6 shadow-sm">
+                    <span class="bg-terracotta-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase" data-i18n="phoenix.noticeScope">Representation Scope</span>
+                    <h2 class="text-xl font-bold text-navygreen-800 mt-2 mb-1" data-i18n="phoenix.noticeTitle">Independent Entity Representation Notice</h2>
+                    <p class="text-slate-700 text-xs leading-relaxed">
+                        <span data-i18n="phoenix.noticeText1">Damene Balcha General Trading represents</span> <strong>Phoenix Home Materials</strong> <span data-i18n="phoenix.noticeText2">through an authorized corporate representation agreement. Phoenix Home Materials is an independent business entity and is not an owned subsidiary of Damene Balcha General Trading.</span>
+                    </p>
+                </div>
+
+                <!-- Bedding & Bathroom Materials -->
+                <div class="mt-12">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="phoenix.secTitle">Bedding & Bathroom Materials</h2>
+                        <p class="text-slate-600 text-sm" data-i18n="phoenix.secSubtitle">Comfortable bedding essentials, decorative rugs, and practical bathroom accessories.</p>
+                    </div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/Hnc5LyCb/1784847234-mattress.jpg" alt="High-quality mattress" data-i18n-alt="hm.mattressAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.mattressTitle">High-Quality Mattress</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.mattressDesc">A comfortable, supportive mattress designed to provide restful sleep and long-lasting comfort.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/Jzc6NGs4/download.jpg" alt="Pillows" data-i18n-alt="hm.pillowsAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.pillowsTitle">Pillows</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.pillowsDesc">Soft and supportive pillows that provide comfort for the head and neck while sleeping.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/8PGLhwMY/IMG-1283.avif" alt="Cotton bed sheets" data-i18n-alt="hm.sheetsAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.sheetsTitle">Cotton Bed Sheets</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.sheetsDesc">Breathable and soft cotton sheets that provide a comfortable and fresh sleeping surface.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://images.unsplash.com/photo-1631049035182-249067d7618e?auto=format&fit=crop&w=800&q=80" alt="Comforter" data-i18n-alt="hm.comforterAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.comforterTitle">Comforters</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.comforterDesc">Thick, cushioned bedding designed to provide warmth and comfort throughout the night.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Duvet cover" data-i18n-alt="hm.duvetAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.duvetTitle">Duvet Covers</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.duvetDesc">Protective and decorative fabric covers that keep duvets clean while enhancing bedroom style.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/90Czq8KZ/download.jpg" alt="Foldable mattress" data-i18n-alt="hm.foldMatAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.foldMatTitle">Foldable Mattress</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.foldMatDesc">A space-saving mattress that folds easily for convenient storage, transport, and extra sleeping space.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/tJcQH73C/62458063.avif" alt="Area rug" data-i18n-alt="hm.rugsAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.rugsTitle">Rugs</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.rugsDesc">Decorative floor coverings that add warmth, comfort, and style to any room.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/hjH6CNcG/719Y16KIna-L-AC-UF894-1000-QL80.jpg" alt="Shower towels" data-i18n-alt="hm.towelsAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.towelsTitle">Shower Towels</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.towelsDesc">Soft and absorbent towels designed to dry the body comfortably after bathing or showering.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                            <img src="https://i.postimg.cc/c4ckYvgs/8178LI1zp-UL-AC-UF894-1000-QL80.jpg" alt="Bathroom accessories" data-i18n-alt="hm.bathAccAlt" class="h-44 w-full object-cover" loading="lazy">
+                            <div class="p-4">
+                                <h3 class="font-bold text-navygreen-800 text-sm" data-i18n="hm.bathAccTitle">Bathroom Accessories</h3>
+                                <p class="text-xs text-slate-600 mt-1" data-i18n="hm.bathAccDesc">Practical bathroom essentials such as soap dispensers, towel holders, and toothbrush holders that improve organization and convenience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phoenix Showroom Location & Map -->
+                <div class="bg-white border border-cream-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-navygreen-800 mb-4" data-i18n="phoenix.mapTitle">Phoenix Showroom Location & Desk</h3>
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 rounded-xl overflow-hidden h-60 bg-cream-100">
+                           <iframe title="Phoenix Showroom Map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d865.3449604676359!2d37.75874377541082!3d6.8563100762528455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2set!4v1794058399816!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <div class="lg:col-span-5 space-y-4 text-xs">
+                            <div class="p-4 bg-cream-50 rounded-xl space-y-2">
+                                <div class="font-bold text-navygreen-800"><i class="fa-solid fa-store text-terracotta-500 mr-1"></i> <span data-i18n="lbl.showroomAddr">Showroom Address</span></div>
+                                <p class="text-slate-600" data-i18n="phoenix.addr">Gutera Ave, Water Development Center, Wolaita Sodo, South Ethiopia</p>
+                                <div class="font-bold text-navygreen-800 pt-2"><i class="fa-solid fa-phone text-terracotta-500 mr-1"></i> <span data-i18n="lbl.callUs">Call us</span></div>
+                                <p class="text-slate-600">+251 91 628 4855</p>
+                            </div>
+                            <a href="tel:+251916284855" class="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3 rounded-xl transition-colors shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone"></i>
+                                <span data-i18n="btn.orderNow">Order now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TRANSPORT VEHICLES SELL SECTION ================= -->
+        <section id="section-vehicles" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navygreen-900 text-xs font-semibold text-slate-300 mb-2">
+                            <i class="fa-solid fa-motorcycle text-terracotta-500"></i> <span data-i18n="veh.badge">Division Four</span>
+                        </div>
+                        <h1 class="text-3xl sm:text-4xl font-bold" data-i18n="veh.pageTitle">Transport Vehicles Sell</h1>
+                        <p class="text-slate-300 text-base font-light mt-1" data-i18n="veh.pageSubtitle">Sales of two and three-wheeler transport vehicles (motorbikes, bajajs).</p>
+                    </div>
+                    <div class="bg-white p-2 rounded-xl shrink-0 shadow-inner">
+                        <img src="https://i.postimg.cc/mrcyxHyK/photo-1-2026-10-29-05-36-21.jpg" alt="Vehicle Sales Logo" data-i18n-alt="veh.logoAlt" class="h-16 w-auto object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-12">
+                <div>
+                    <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="veh.secTitle">Available Transport Vehicles</h2>
+                    <p class="text-slate-600 text-sm mb-6" data-i18n="veh.secSubtitle">Commercial and personal transportation inventory ready for procurement.</p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Motorbikes" data-i18n-alt="veh.motosAlt" class="h-44 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="veh.motosTitle">Motorbikes / Motorcycles</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="veh.motosDesc">Durable 2-wheeled motorbikes designed for urban delivery and daily transit.</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/Cxh8B1kF/Bajaj-RE-(front)-Jakarta.jpg" alt="Bajaj Three-Wheelers" data-i18n-alt="veh.bajajAlt" class="h-44 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="veh.bajajTitle">Three-Wheeler Vehicles (Bajaj)</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="veh.bajajDesc">High-efficiency 3-wheeler passenger and cargo transport bajaj models.</p>
+                        </div>
+                        <!-- Spare Part Sell Card -->
+                        <div class="bg-white rounded-xl border border-cream-200 p-5 shadow-sm">
+                            <img src="https://i.postimg.cc/FzXyPs0t/60aa0d085f93856334be0903957b59fb.jpg" alt="Spare Part Sell" data-i18n-alt="veh.spareAlt" class="h-44 w-full object-cover rounded-lg mb-3">
+                            <h3 class="font-bold text-navygreen-800" data-i18n="veh.spareTitle">Spare Part Sell</h3>
+                            <p class="text-xs text-slate-600 mt-1" data-i18n="veh.spareDesc">Genuine replacement parts, engine components, and maintenance accessories for motorbikes and three-wheelers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicles Showroom Map & Contact -->
+                <div class="bg-white border border-cream-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-navygreen-800 mb-4" data-i18n="veh.mapTitle">Vehicle Sales Depot Location & Contact</h3>
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 rounded-xl overflow-hidden h-60 bg-cream-100">
+                            <iframe title="Vehicle Depot Map" class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d865.3449604676359!2d37.75874377541082!3d6.8563100762528455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2set!4v1794058399816!5m2!1sen!2set" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="lg:col-span-5 space-y-4 text-xs">
+                            <div class="p-4 bg-cream-50 rounded-xl space-y-2">
+                                <div class="font-bold text-navygreen-800"><i class="fa-solid fa-location-dot text-terracotta-500 mr-1"></i> <span data-i18n="lbl.vehShowroom">Vehicle Showroom</span></div>
+                                <p class="text-slate-600" data-i18n="veh.showroomAddr">Gutera Ave, Water Development Center, Wolaita Sodo, South Ethiopia</p>
+                                <div class="font-bold text-navygreen-800 pt-2"><i class="fa-solid fa-phone text-terracotta-500 mr-1"></i> <span data-i18n="lbl.salesDesk">Sales Desk</span></div>
+                                <p class="text-slate-600">+251 91 190 9229 / +251 91 110 5498</p>
+                            </div>
+                            <button onclick="showSection('contact')" class="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3 rounded-xl transition-colors shadow-sm flex items-center justify-center gap-2">
+                                <i class="fa-regular fa-paper-plane"></i>
+                                <span data-i18n="veh.btnInquire">Inquire About Vehicle Purchase</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT US SECTION ================= -->
+        <section id="section-contact" class="page-section hidden">
+            <div class="bg-navygreen-800 text-white py-14">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h1 class="text-3xl font-bold" data-i18n="contact.pageTitle">Contact Us</h1>
+                    <p class="text-slate-300 mt-2 text-sm font-light" data-i18n="contact.pageSubtitle">Get in touch with our corporate team or division desks.</p>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <!-- Details Column -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="bg-white p-6 rounded-2xl border border-cream-200 shadow-sm space-y-6">
+                            <h2 class="text-xl font-bold text-navygreen-800 border-b border-cream-200 pb-3" data-i18n="contact.hqTitle">Corporate Headquarters</h2>
+                            <div class="space-y-4 text-xs">
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-terracotta-500 text-base mt-0.5"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800" data-i18n="lbl.location">Location</h4>
+                                        <p class="text-slate-600" data-i18n="contact.hqAddr">Wolaita Sodo, Ethiopia</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-phone text-terracotta-500 text-base mt-0.5"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800" data-i18n="lbl.phone">Phone</h4>
+                                        <p class="text-slate-600">+251 91 190 9229 / +251 91 110 5498</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i class="fa-solid fa-envelope text-terracotta-500 text-base mt-0.5"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800" data-i18n="lbl.email">Email</h4>
+                                        <p class="text-slate-600">damenebalcha.gt@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-cream-200 shadow-sm">
+                            <h2 class="text-2xl font-bold text-navygreen-800 mb-2" data-i18n="contact.formTitle">
+                                Send Us a Message
+                            </h2>
+                            <p class="text-xs text-slate-500 mb-6" data-i18n="contact.formSubtitle">
+                                Select a division so we can direct your inquiry.
+                            </p>
+
+                            <div id="form-alert" class="hidden p-4 rounded-xl mb-6 text-xs"></div>
+
+                            <form id="contact-form" action="https://formsubmit.co/mrabenezer16@gmail.com" method="POST" class="space-y-4 text-xs">
+                                <!-- FormSubmit Configuration -->
+                                <input type="hidden" name="_subject" value="New Website Inquiry - Damene Balcha General Trading">
+                                <input type="hidden" name="_captcha" value="true">
+                                <input type="hidden" name="_template" value="table">
+
+                                <!-- Full Name & Email -->
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1" data-i18n="contact.lblName">
+                                            Full Name *
+                                        </label>
+                                        <input type="text" name="Full Name" placeholder="Enter your full name" data-i18n-placeholder="contact.phName" required class="w-full px-3.5 py-2.5 rounded-lg border border-cream-200 bg-cream-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navygreen-800">
+                                    </div>
+
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1" data-i18n="contact.lblEmail">
+                                            Email Address *
+                                        </label>
+                                        <input type="email" name="Email" placeholder="example@email.com" data-i18n-placeholder="contact.phEmail" required class="w-full px-3.5 py-2.5 rounded-lg border border-cream-200 bg-cream-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navygreen-800">
+                                    </div>
+                                </div>
+
+                                <!-- Phone & Department -->
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1" data-i18n="contact.lblPhone">
+                                            Phone Number *
+                                        </label>
+                                        <input type="tel" name="Phone Number" placeholder="+251 ..." data-i18n-placeholder="contact.phPhone" required class="w-full px-3.5 py-2.5 rounded-lg border border-cream-200 bg-cream-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navygreen-800">
+                                    </div>
+
+                                    <div>
+                                        <label class="block font-semibold text-slate-700 mb-1" data-i18n="contact.lblDept">
+                                            Inquiry Department *
+                                        </label>
+                                        <select id="inquiry-dept-select" name="Inquiry Department" required class="w-full px-3.5 py-2.5 rounded-lg border border-cream-200 bg-cream-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navygreen-800">
+                                            <option value="" data-i18n="contact.optSelect">Select Division</option>
+                                            <option data-i18n="nav.div1">Building & Finishing Materials</option>
+                                            <option>Dojamo Guest House</option>
+                                            <option>Phoenix Home Materials</option>
+                                            <option data-i18n="nav.div4">Transport Vehicles Sell</option>
+                                            <option data-i18n="contact.optGeneral">General Inquiry</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Message -->
+                                <div>
+                                    <label class="block font-semibold text-slate-700 mb-1" data-i18n="contact.lblMsg">
+                                        Message Details *
+                                    </label>
+                                    <textarea name="Message Details" rows="4" placeholder="Write your inquiry here..." data-i18n-placeholder="contact.phMsg" required class="w-full px-3.5 py-2.5 rounded-lg border border-cream-200 bg-cream-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-navygreen-800"></textarea>
+                                </div>
+
+                                <!-- Honeypot Spam Protection -->
+                                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                                <!-- Submit Button -->
+                                <button id="submit-btn" type="submit" class="w-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold py-3.5 rounded-xl transition-colors shadow-md flex items-center justify-center gap-2">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                    <span data-i18n="contact.btnSubmit">Submit Inquiry</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navygreen-900 text-white border-t border-navygreen-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Col 1: Corporate Intro -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" alt="Damene Balcha Logo" data-i18n-alt="brand.alt" class="h-10 w-auto bg-white p-1 rounded" onerror="this.src='https://placehold.co/150x60/ffffff/1b4332?text=Damene+Balcha'">
+                        <span class="font-display font-bold text-lg text-white">Damene Balcha</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed" data-i18n="footer.intro">
+                        Damene Balcha General Trading is a multi-sector corporate entity operating in building supplies, guest accommodations, transport vehicle sales, and brand representation.
+                    </p>
+                </div>
+
+                <!-- Col 2: Business Sectors -->
+                <div>
+                    <h3 class="font-bold text-xs text-terracotta-500 uppercase tracking-widest mb-4" data-i18n="footer.secDivisions">Business Divisions</h3>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><button onclick="showSection('building')" class="hover:text-white transition-colors" data-i18n="nav.div1">Building & Finishing Materials</button></li>
+                        <li><button onclick="showSection('guest-house')" class="hover:text-white transition-colors">Dojamo Guest House</button></li>
+                        <li><button onclick="showSection('home-materials')" class="hover:text-white transition-colors">Phoenix Home Materials</button></li>
+                        <li><button onclick="showSection('vehicles')" class="hover:text-white transition-colors" data-i18n="nav.div4">Transport Vehicles Sell</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div>
+                    <h3 class="font-bold text-xs text-terracotta-500 uppercase tracking-widest mb-4" data-i18n="footer.secNav">Navigation</h3>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><button onclick="showSection('home')" class="hover:text-white transition-colors" data-i18n="footer.navHome">Home Page</button></li>
+                        <li><button onclick="showSection('about')" class="hover:text-white transition-colors" data-i18n="nav.about">About Us</button></li>
+                        <li><button onclick="showSection('contact')" class="hover:text-white transition-colors" data-i18n="nav.contact">Contact Us</button></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Corporate Logos & ExSofós Branding -->
+                <div class="space-y-4">
+                    <h3 class="font-bold text-xs text-terracotta-500 uppercase tracking-widest mb-2" data-i18n="footer.secBrands">Divisional Brands</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <img src="https://i.postimg.cc/QxmMDY6C/Untitled-Design.png" alt="Main Logo" class="h-8 bg-white p-1 rounded object-contain">
+                        <img src="https://i.postimg.cc/mrcyxHyK/photo-1-2026-10-29-05-36-21.jpg" alt="Dojamo Logo" class="h-8 bg-white p-1 rounded object-cover">
+                        <img src="https://i.postimg.cc/cJKBqncG/photo-3-2026-10-29-05-36-21.jpg" alt="Phoenix Logo" class="h-8 bg-white p-1 rounded object-cover">
+                    </div>
+
+                    <!-- POWERED BY EXSOFÓS SYSTEM GEN -->
+                    <a href="https://exsofssystemgenenterprisewebsite.vercel.app" target="_blank" rel="noopener noreferrer" class="block no-underline" aria-label="Visit ExSofós System GEN website">
+                        <div class="p-4 bg-[#1b4332]/40 shadow-lg rounded-2xl border border-white/60 transition-all duration-300 hover:border-[#800020] hover:shadow-xl cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <!-- FULLY VISIBLE LOGO -->
+                                <div class="w-20 h-20 md:w-24 md:h-24 shrink-0 flex items-center justify-center rounded-xl bg-white p-2 border border-white/20">
+                                    <img src="https://i.postimg.cc/vT6pKRyN/25Sep2424-Simon-Pro-Upload-page-0001.jpg" alt="ExSofós System GEN Logo" class="w-full h-full object-contain" loading="lazy">
+                                </div>
+                                <!-- BRAND INFORMATION -->
+                                <div class="flex flex-col justify-center min-w-0">
+                                    <span class="text-[10px] md:text-xs uppercase tracking-[0.2em] font-semibold text-slate-300 mb-1">
+                                        System Engineering
+                                    </span>
+                                    <span class="text-sm md:text-base font-extrabold text-white leading-snug">
+                                        Powered by
+                                    </span>
+                                    <span class="text-base md:text-lg font-extrabold text-[#E9D8B5] leading-snug">
+                                        ExSofós System GEN
+                                    </span>
+                                    <div class="w-12 h-1 bg-[#800020] rounded-full mt-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Representation Legal Disclaimer & Copyright -->
+            <div class="mt-8 pt-6 border-t border-navygreen-800 text-[11px] text-slate-400 space-y-2">
+                <p>
+                    <strong data-i18n="footer.repNoticeLabel">Representation Notice:</strong> <span data-i18n="footer.repNoticeText">Phoenix Home Materials is an independent business entity operating under a representation agreement with Damene Balcha General Trading and is not a subsidiary or owned entity.</span>
+                </p>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-2 pt-2 text-slate-400">
+                    <div>&copy; <span id="year-span">2026</span> Damene Balcha General Trading. All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CENTRALIZED TRANSLATION SYSTEM DICTIONARY AND CONTROLLER -->
+    <script>
+        const translations = {
+            en: {
+                "meta.title": "Damene Balcha General Trading",
+                "meta.desc": "Damene Balcha General Trading PLC - Building Materials, Dojamo Guest House, Phoenix Home Materials Representation, and Transport Vehicles Sales.",
+                "brand.subtitle": "General Trading",
+                "brand.alt": "Damene Balcha General Trading Logo",
+                "topbar.headquarters": "Headquarters: Wolaita Sodo, South Ethiopia",
+                "nav.home": "Home",
+                "nav.about": "About Us",
+                "nav.businesses": "Our Businesses",
+                "nav.div1": "Building & Finishing Materials",
+                "nav.div4": "Transport Vehicles Sell",
+                "nav.contact": "Contact Us",
+                "nav.getInTouch": "Get in Touch",
+                "nav.contactToday": "Contact Us Today",
+                "hero.badge": "Corporate Excellence & Reliability",
+                "hero.titleLine1": "Diverse Business Interests.",
+                "hero.titleLine2": "One Professional Partner.",
+                "hero.desc": "Discover Damene Balcha General Trading and its diverse business activities in building and finishing materials, guest house hospitality, vehicle sales, and brand representation.",
+                "hero.btnExplore": "Explore Our Businesses",
+                "hero.btnContact": "Contact Us",
+                "trusted.badge": "Our Trusted Network",
+                "trusted.title": "Trusted by Leading Organizations",
+                "trusted.org1": "Organization 1",
+                "trusted.org2": "Organization 2",
+                "trusted.org3": "Organization 3",
+                "trusted.org4": "Organization 4",
+                "divisions.title": "Four Core Business Divisions",
+                "divisions.subtitle": "Operating with a commitment to corporate governance, legal transparency, and operational reliability.",
+                "div1.badge": "Division 01",
+                "div1.title": "Building & Finishing Materials",
+                "div1.desc": "Raw construction supplies (sand, gravel, stone) and high-end finishing goods distribution.",
+                "div1.imgAlt": "Building Materials",
+                "div2.badge": "Division 02",
+                "div2.desc": "Quality lodging accommodations focused on comfort, guest security, and warm service.",
+                "div2.imgAlt": "Dojamo Guest House",
+                "div3.badge": "Representation",
+                "div3.tag": "Independent Brand",
+                "div3.desc": "Authorized commercial representation agreement for independent Phoenix home fixtures.",
+                "div3.imgAlt": "Phoenix Representation",
+                "div4.badge": "Division 04",
+                "div4.title": "Transport Vehicles Sell",
+                "div4.desc": "Sales and distribution of two-wheelers and three-wheelers (motorbikes, bajajs) for transport needs.",
+                "div4.imgAlt": "Transport Vehicles Sell",
+                "btn.learnMore": "Learn More",
+                "btn.bookStay": "Book Stay",
+                "btn.repScope": "Representation Scope",
+                "btn.viewVehicles": "View Vehicles",
+                "btn.orderNow": "Order now",
+                "why.title": "Why Partner With Us",
+                "why.subtitle": "Verified operational principles guiding all four commercial divisions.",
+                "why.p1Title": "Legal Transparency",
+                "why.p1Desc": "Strict adherence to verified representation agreements and corporate contracts.",
+                "why.p2Title": "Quality Assurance",
+                "why.p2Desc": "Sourcing high-grade materials and maintained commercial vehicles.",
+                "why.p3Title": "Client-Centric Service",
+                "why.p3Desc": "Responsive communication desk across hospitality, logistics, and trading.",
+                "about.pageTitle": "About Damene Balcha General Trading",
+                "about.pageSubtitle": "Corporate structure, operational ethos, and legal clarity.",
+                "about.overviewTitle": "Company Overview",
+                "about.p1Bold": "Damene Balcha General Trading ",
+                "about.p1Text": "is a multi-sector Ethiopian commercial enterprise committed to quality, operational compliance, and long-term business partnerships.",
+                "about.p2": "Headquartered in Wolaita Sodo, South Ethiopia the company manages four distinct activities: trading construction and finishing materials, running Dojamo Guest House, selling two and three-wheeled transport vehicles, and acting as official representative for Phoenix Home Materials.",
+                "about.quote": "\"Our objective is to deliver value across trading, hospitality, and corporate representations while maintaining absolute legal clarity and customer trust.\"",
+                "about.v1Title": "Reliable Partnerships",
+                "about.v1Desc": "Fostering transparent relationships with clients and representation partners.",
+                "about.v2Title": "Multisector Reach",
+                "about.v2Desc": "Diversified operations across construction, vehicle trading, and hospitality.",
+                "about.cardLogoAlt": "Damene Balcha Official Logo",
+                "about.cardDetailsTitle": "Corporate Office Details",
+                "about.lblStructure": "Structure",
+                "about.valStructure": "Private Limited Company",
+                "about.lblLocation": "Location",
+                "about.valLocation": "Wolaita Sodo, South Ethiopia",
+                "about.lblDivisions": "Active Divisions",
+                "about.valDivisions": "4 Business Lines",
+                "bldg.badge": "Division One",
+                "bldg.pageTitle": "Building & Finishing Materials Trading",
+                "bldg.pageSubtitle": "Sourcing, logistics, and bulk construction supply.",
+                "bldg.logoAlt": "Building Division Logo",
+                "bldg.sec1Title": "High-Quality Finishing Materials",
+                "bldg.sec1Subtitle": "High Quality finishing materials",
+                "bldg.sec2Title": "Construction Raw Supplies",
+                "bldg.sec2Subtitle": "High-grade raw materials for building foundation and structure.",
+                "bldg.sec3Title": "External Supplies",
+                "bldg.sec3Subtitle": "Building section-vehicles and machinery rental.",
+                "bldg.depotTitle": "Building Materials Depot Location",
+                "bldg.depotAddr": "21 Mazoria St. Mary Church Avenue, Wolaita Sodo, South Ethiopia",
+                "bldg.btnInquire": "Inquire for Bulk Order",
+                "prod.porcelainTitle": "Porcelain Floor Tiles (60x60 cm)",
+                "prod.porcelainDesc": "Durable, stain-resistant 60x60 cm porcelain tiles for premium residential and commercial flooring.",
+                "prod.porcelainAlt": "Porcelain Floor Tiles (60x60 cm)",
+                "prod.opcTitle": "Ordinary Portland Cement (42.5N)",
+                "prod.opcDesc": "High-strength 42.5N Ordinary Portland Cement engineered for robust structural load-bearing and concrete works.",
+                "prod.opcAlt": "Ordinary Portland Cement (42.5N)",
+                "prod.ceramicTitle": "Glazed Ceramic Wall Tiles",
+                "prod.ceramicDesc": "Aesthetic and easy-to-clean glazed ceramic tiles designed specifically for interior walls and backsplashes.",
+                "prod.ceramicAlt": "Glazed Ceramic Wall Tiles",
+                "prod.sanitaryTitle": "Sanitaryware Toilet & Washbasin Set",
+                "prod.sanitaryDesc": "Complete bathroom sanitaryware sets including water-efficient toilets and matching ceramic washbasins.",
+                "prod.sanitaryAlt": "Sanitaryware Toilet & Washbasin Set",
+                "prod.plumbingTitle": "Stainless Steel Plumbing Valves & Pipe Fittings",
+                "prod.plumbingDesc": "Corrosion-resistant stainless steel valves and plumbing fittings for reliable water supply networks.",
+                "prod.plumbingAlt": "Stainless Steel Plumbing Valves & Pipe Fittings",
+                "prod.rebarTitle": "Deformed Steel Rebar Grade 75",
+                "prod.rebarDesc": "High-strength ribbed steel bars used to reinforce concrete and improve structural load-bearing capacity.",
+                "prod.rebarAlt": "Deformed steel rebar Grade 75",
+                "prod.bldgMatTitle": "Building Materials",
+                "prod.bldgMatDesc": "Essential construction supplies such as cement, sand, aggregates, and blocks for building and infrastructure projects.",
+                "prod.bldgMatAlt": "Building materials",
+                "prod.cablesTitle": "Electric Cables and Wires",
+                "prod.cablesDesc": "Electrical conductors that carry power safely through residential, commercial, and industrial installations.",
+                "prod.cablesAlt": "Electric cables and wires",
+                "prod.paintsTitle": "Paints / Jotun Paints",
+                "prod.paintsDesc": "Decorative and protective coatings that add color to surfaces and help protect them from weather and wear.",
+                "prod.paintsAlt": "Paints and Jotun paints",
+                "prod.alumTitle": "Aluminium Profiles",
+                "prod.alumDesc": "Lightweight, durable extruded sections commonly used for windows, doors, facades, and architectural fittings.",
+                "prod.alumAlt": "Aluminium profiles",
+                "prod.graniteTitle": "Granite and Marbles",
+                "prod.graniteDesc": "Natural stones valued for their durability and elegant finish in flooring, countertops, wall cladding, and decoration.",
+                "prod.graniteAlt": "Granite and marble slabs",
+                "prod.waterproofTitle": "Waterproofing Solutions",
+                "prod.waterproofDesc": "Water-resistant membranes and coatings that help prevent leakage and protect buildings from moisture damage.",
+                "prod.waterproofAlt": "Waterproofing solutions",
+                "raw.sandTitle": "Sand & River Aggregates",
+                "raw.sandDesc": "Screened river sand and plaster sand for masonry and concrete mixing.",
+                "raw.sandAlt": "Sand",
+                "raw.stoneTitle": "Basalt Stone",
+                "raw.stoneDesc": "Crushed stone foundations and heavy slab casting.",
+                "raw.stoneAlt": "Stone",
+                "raw.pebblesTitle": "Concreate Pebbles",
+                "raw.pebblesDesc": "Crushed stone pebbles for mixing concreate.",
+                "raw.pebblesAlt": "Pebbles",
+                "raw.cementTitle": "Building Cement",
+                "raw.cementDesc": "Bulk and bagged high-grade building cement for structural casting and masonry.",
+                "raw.cementAlt": "Building Cement",
+                "raw.blocksTitle": "Solid concrete blocks",
+                "raw.blocksDesc": "High-density solid concrete blocks for durable load-bearing walls and partitions.",
+                "raw.blocksAlt": "Solid concrete blocks",
+                "ext.truckTitle": "Building Dump-Truck",
+                "ext.truckDesc": "powerfull constraction vehicles rental Service",
+                "ext.truckAlt": "Building Dump-Truck",
+                "ext.loaderTitle": "Wheeled Loader",
+                "ext.loaderDesc": "heavy constraction Loader",
+                "ext.loaderAlt": "Wheeled Loader",
+                "lbl.location": "Location",
+                "lbl.directLine": "Direct Line",
+                "lbl.address": "Address",
+                "lbl.portal": "Official Portal",
+                "lbl.phone": "Phone number",
+                "lbl.email": "Email",
+                "lbl.showroomAddr": "Showroom Address",
+                "lbl.callUs": "Call us",
+                "lbl.vehShowroom": "Vehicle Showroom",
+                "lbl.salesDesk": "Sales Desk",
+                "guest.badge": "Division Two",
+                "guest.pageSubtitle": "Comfortable Guest Accommodations & Hospitality Services.",
+                "guest.logoAlt": "Dojamo Guest House Logo",
+                "guest.welcomeTitle": "Welcoming Hospitality Experience",
+                "guest.welcomeDesc": "Dojamo Guest House delivers peaceful, fully equipped lodging for corporate guests, international travelers, and long-term residents in Addis Ababa.",
+                "guest.btnBook": "Book Your Stay (Official Site)",
+                "guest.roomAlt1": "Guest House Rooms",
+                "guest.roomAlt2": "Guest House Rooms",
+                "guest.galleryBadge": "Visual Tour",
+                "guest.galleryTitle": "Suites & Accommodation Gallery",
+                "guest.gallerySubtitle": "Click or hover over any card to explore our serene rooms, lounges, and guest facilities.",
+                "guest.galCap1": "Executive Guest Suite",
+                "guest.galCap2": "Breezy morning air",
+                "guest.galCap3": "Premium Comfort Bedding",
+                "guest.galCap4": "Dojamo Hospitality & Exterior",
+                "guest.galCap5": "A peaceful and clean compound",
+                "guest.galCap6": "Fresh Cotton Linens & Towels",
+                "guest.galCap7": "En-Suite Modern Amenities",
+                "guest.mapTitle": "Dojamo Guest House Map & Location",
+                "guest.addr": "Sodo Prision Avenue, Wolaita Sodo, South Ethiopia",
+                "phoenix.badge": "Corporate Representation",
+                "phoenix.pageSubtitle": "Authorized commercial representation agreement.",
+                "phoenix.logoAlt": "Phoenix Representation Logo",
+                "phoenix.noticeScope": "Representation Scope",
+                "phoenix.noticeTitle": "Independent Entity Representation Notice",
+                "phoenix.noticeText1": "Damene Balcha General Trading represents",
+                "phoenix.noticeText2": "through an authorized corporate representation agreement. Phoenix Home Materials is an independent business entity and is not an owned subsidiary of Damene Balcha General Trading.",
+                "phoenix.secTitle": "Bedding & Bathroom Materials",
+                "phoenix.secSubtitle": "Comfortable bedding essentials, decorative rugs, and practical bathroom accessories.",
+                "phoenix.mapTitle": "Phoenix Showroom Location & Desk",
+                "phoenix.addr": "Gutera Ave, Water Development Center, Wolaita Sodo, South Ethiopia",
+                "hm.mattressTitle": "High-Quality Mattress",
+                "hm.mattressDesc": "A comfortable, supportive mattress designed to provide restful sleep and long-lasting comfort.",
+                "hm.mattressAlt": "High-quality mattress",
+                "hm.pillowsTitle": "Pillows",
+                "hm.pillowsDesc": "Soft and supportive pillows that provide comfort for the head and neck while sleeping.",
+                "hm.pillowsAlt": "Pillows",
+                "hm.sheetsTitle": "Cotton Bed Sheets",
+                "hm.sheetsDesc": "Breathable and soft cotton sheets that provide a comfortable and fresh sleeping surface.",
+                "hm.sheetsAlt": "Cotton bed sheets",
+                "hm.comforterTitle": "Comforters",
+                "hm.comforterDesc": "Thick, cushioned bedding designed to provide warmth and comfort throughout the night.",
+                "hm.comforterAlt": "Comforter",
+                "hm.duvetTitle": "Duvet Covers",
+                "hm.duvetDesc": "Protective and decorative fabric covers that keep duvets clean while enhancing bedroom style.",
+                "hm.duvetAlt": "Duvet cover",
+                "hm.foldMatTitle": "Foldable Mattress",
+                "hm.foldMatDesc": "A space-saving mattress that folds easily for convenient storage, transport, and extra sleeping space.",
+                "hm.foldMatAlt": "Foldable mattress",
+                "hm.rugsTitle": "Rugs",
+                "hm.rugsDesc": "Decorative floor coverings that add warmth, comfort, and style to any room.",
+                "hm.rugsAlt": "Area rug",
+                "hm.towelsTitle": "Shower Towels",
+                "hm.towelsDesc": "Soft and absorbent towels designed to dry the body comfortably after bathing or showering.",
+                "hm.towelsAlt": "Shower towels",
+                "hm.bathAccTitle": "Bathroom Accessories",
+                "hm.bathAccDesc": "Practical bathroom essentials such as soap dispensers, towel holders, and toothbrush holders that improve organization and convenience.",
+                "hm.bathAccAlt": "Bathroom accessories",
+                "veh.badge": "Division Four",
+                "veh.pageTitle": "Transport Vehicles Sell",
+                "veh.pageSubtitle": "Sales of two and three-wheeler transport vehicles (motorbikes, bajajs).",
+                "veh.logoAlt": "Vehicle Sales Logo",
+                "veh.secTitle": "Available Transport Vehicles",
+                "veh.secSubtitle": "Commercial and personal transportation inventory ready for procurement.",
+                "veh.motosTitle": "Motorbikes / Motorcycles",
+                "veh.motosDesc": "Durable 2-wheeled motorbikes designed for urban delivery and daily transit.",
+                "veh.motosAlt": "Motorbikes",
+                "veh.bajajTitle": "Three-Wheeler Vehicles (Bajaj)",
+                "veh.bajajDesc": "High-efficiency 3-wheeler passenger and cargo transport bajaj models.",
+                "veh.bajajAlt": "Bajaj Three-Wheelers",
+                "veh.spareTitle": "Spare Part Sell",
+                "veh.spareDesc": "Genuine replacement parts, engine components, and maintenance accessories for motorbikes and three-wheelers.",
+                "veh.spareAlt": "Spare Part Sell",
+                "veh.mapTitle": "Vehicle Sales Depot Location & Contact",
+                "veh.showroomAddr": "Gutera Ave, Water Development Center, Wolaita Sodo, South Ethiopia",
+                "veh.btnInquire": "Inquire About Vehicle Purchase",
+                "contact.pageTitle": "Contact Us",
+                "contact.pageSubtitle": "Get in touch with our corporate team or division desks.",
+                "contact.hqTitle": "Corporate Headquarters",
+                "contact.hqAddr": "Wolaita Sodo, Ethiopia",
+                "contact.formTitle": "Send Us a Message",
+                "contact.formSubtitle": "Select a division so we can direct your inquiry.",
+                "contact.lblName": "Full Name *",
+                "contact.phName": "Enter your full name",
+                "contact.lblEmail": "Email Address *",
+                "contact.phEmail": "example@email.com",
+                "contact.lblPhone": "Phone Number *",
+                "contact.phPhone": "+251 ...",
+                "contact.lblDept": "Inquiry Department *",
+                "contact.optSelect": "Select Division",
+                "contact.optGeneral": "General Inquiry",
+                "contact.lblMsg": "Message Details *",
+                "contact.phMsg": "Write your inquiry here...",
+                "contact.btnSubmit": "Submit Inquiry",
+                "contact.submitting": "Processing...",
+                "contact.successMsg": "Thank you! Your inquiry has been submitted. Our team will get back to you shortly.",
+                "footer.intro": "Damene Balcha General Trading is a multi-sector corporate entity operating in building supplies, guest accommodations, transport vehicle sales, and brand representation.",
+                "footer.secDivisions": "Business Divisions",
+                "footer.secNav": "Navigation",
+                "footer.secBrands": "Divisional Brands",
+                "footer.navHome": "Home Page",
+                "footer.repNoticeLabel": "Representation Notice:",
+                "footer.repNoticeText": "Phoenix Home Materials is an independent business entity operating under a representation agreement with Damene Balcha General Trading and is not a subsidiary or owned entity."
+            },
+            am: {
+                "meta.title": "ዳመነ ባልቻ ጠቅላላ ንግድ",
+                "meta.desc": "ዳመነ ባልቻ ጠቅላላ ንግድ ኃ/የተ/የግ/ማህበር - የግንባታ እቃዎች፣ ዶጃሞ የእንግዳ ማረፊያ፣ ፊኒክስ የቤት እቃዎች ወኪል እና የትራንስፖርት ተሽከርካሪዎች ሽያጭ።",
+                "brand.subtitle": "ጠቅላላ ንግድ",
+                "brand.alt": "የዳመነ ባልቻ ጠቅላላ ንግድ ሎጎ",
+                "topbar.headquarters": "ዋና መሥሪያ ቤት: ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "nav.home": "መነሻ",
+                "nav.about": "ስለ እኛ",
+                "nav.businesses": "የንግድ ዘርፎቻችን",
+                "nav.div1": "የግንባታ እና ማጠናቀቂያ እቃዎች",
+                "nav.div4": "የትራንስፖርት ተሽከርካሪዎች ሽያጭ",
+                "nav.contact": "ያግኙን",
+                "nav.getInTouch": "እኛን ያግኙን",
+                "nav.contactToday": "ዛሬውኑ ያግኙን",
+                "hero.badge": "የድርጅት ድንቅ ብቃት እና ተዓማኒነት",
+                "hero.titleLine1": "የተለያዩ የንግድ ዘርፎች።",
+                "hero.titleLine2": "አንድ ብቁ የንግድ አጋር።",
+                "hero.desc": "ዳመነ ባልቻ ጠቅላላ ንግድ በግንባታ እቃዎች፣ በንግድ እንግዳ ማረፊያ፣ በተሽከርካሪዎች ሽያጭ እና በብራንድ ወኪልነት የሚያደርጋቸውን የተለያዩ የንግድ እንቅስቃሴዎች ይወቁ።",
+                "hero.btnExplore": "ንግዶቻችንን ይጎብኙ",
+                "hero.btnContact": "ያግኙን",
+                "trusted.badge": "የሚታመኑ አጋሮቻችን",
+                "trusted.title": "በቀዳሚ ድርጅቶች የታመነ",
+                "trusted.org1": "ድርጅት 1",
+                "trusted.org2": "ድርጅት 2",
+                "trusted.org3": "ድርጅት 3",
+                "trusted.org4": "ድርጅት 4",
+                "divisions.title": "አራት ዋና ዋና የንግድ ዘርፎች",
+                "divisions.subtitle": "በህጋዊ ግልጽነት፣ በድርጅታዊ መርህ እና በአስተማማኝ አሰራር የሚመራ።",
+                "div1.badge": "ዘርፍ 01",
+                "div1.title": "የግንባታ እና ማጠናቀቂያ እቃዎች",
+                "div1.desc": "የጥሬ ግንባታ እቃዎች (አሸዋ፣ ጠጠር፣ ድንጋይ) እና ጥራት ያላቸው የማጠናቀቂያ እቃዎች አቅርቦት።",
+                "div1.imgAlt": "የግንባታ እቃዎች",
+                "div2.badge": "ዘርፍ 02",
+                "div2.desc": "በምቾት፣ በደህንነት እና በተላላኪ አስተናጋጅነት ላይ ያተኮረ ጥራት ያለው የእንግዳ ማረፊያ አገልግሎት።",
+                "div2.imgAlt": "ዶጃሞ የእንግዳ ማረፊያ",
+                "div3.badge": "ወኪልነት",
+                "div3.tag": "ራሱን የቻለ ብራንድ",
+                "div3.desc": "ለራሱ ለቻለው ፊኒክስ የቤት እቃዎች ህጋዊ ንግድ ወኪልነት ስምምነት።",
+                "div3.imgAlt": "የፊኒክስ ወኪልነት",
+                "div4.badge": "ዘርፍ 04",
+                "div4.title": "የትራንስፖርት ተሽከርካሪዎች ሽያጭ",
+                "div4.desc": "ለትራንስፖርት አገልግሎት የሚውሉ የሁለት እና የሶስት እግር ተሽከርካሪዎች (ሞተር ብስክሌቶች፣ ባጃጆች) ሽያጭ እና ስርጭት።",
+                "div4.imgAlt": "የትራንስፖርት ተሽከርካሪዎች ሽያጭ",
+                "btn.learnMore": "ተጨማሪ ያንብቡ",
+                "btn.bookStay": "ቦታ ይያዙ",
+                "btn.repScope": "የወኪልነት ወሰን",
+                "btn.viewVehicles": "ተሽከርካሪዎችን ይመልከቱ",
+                "btn.orderNow": "አሁኑኑ ይዘዙ",
+                "why.title": "ከእኛ ጋር ለምን ይሰራሉ?",
+                "why.subtitle": "አራቱንም የንግድ ዘርፎች የሚመሩ የተረጋገጡ የአሰራር መርሆዎች።",
+                "why.p1Title": "ህጋዊ ግልጽነት",
+                "why.p1Desc": "በተረጋገጡ የወኪልነት ስምምነቶች እና የኮርፖሬት ውሎች ላይ ጥብቅ ቁርጠኝነት።",
+                "why.p2Title": "የጥራት ዋስትና",
+                "why.p2Desc": "ከፍተኛ ጥራት ያላቸውን እቃዎች እና የተጠበቁ ንግድ ተሽከርካሪዎችን ማቅረብ።",
+                "why.p3Title": "ለደንበኛ ያተኮረ አገልግሎት",
+                "why.p3Desc": "በእንግዳ ተቀባይነት፣ በሎጂስቲክስ እና በንግድ ዙሪያ ፈጣን ምላሽ የሚሰጥ የደንበኞች አገልግሎት።",
+                "about.pageTitle": "ስለ ዳመነ ባልቻ ጠቅላላ ንግድ",
+                "about.pageSubtitle": "የድርጅቱ መዋቅር፣ የአሰራር ፍልስፍና እና ህጋዊ ግልጽነት።",
+                "about.overviewTitle": "የኩባንያው አጠቃላይ እይታ",
+                "about.p1Bold": "ዳመነ ባልቻ ጠቅላላ ንግድ ",
+                "about.p1Text": "ለጥራት፣ ለህጋዊ አሰራር እና ለረጅም ጊዜ የንግድ አጋርነት የተሰጠ በብዙ የንግድ ዘርፎች የሚንቀሳቀስ የኢትዮጵያ ንግድ ድርጅት ነው።",
+                "about.p2": "ዋና መሥሪያ ቤቱ በወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ የሚገኘው ኩባንያው አራት ዋና ዋና እንቅስቃሴዎችን ያስተዳድራል፡ የግንባታ እና ማጠናቀቂያ እቃዎች ንግድ፣ የዶጃሞ የእንግዳ ማረፊያ አስተዳደር፣ የሁለት እና ሶስት እግር ተሽከርካሪዎች ሽያጭ፣ እና የፊኒክስ የቤት እቃዎች ህጋዊ ተወካይነት።",
+                "about.quote": "\"ዓላማችን በንግድ፣ በእንግዳ ተቀባይነት እና በኮርፖሬት ወኪልነት ዙሪያ ህጋዊ ግልጽነትን እና የደንበኞችን እምነት እንደጠበቅን ከፍተኛ እሴት ማቅረብ ነው።\"",
+                "about.v1Title": "አስተማማኝ አጋርነት",
+                "about.v1Desc": "ከደንበኞች እና ከወኪል አጋሮች ጋር ግልጽ እና አስተማማኝ ግንኙነት መፍጠር።",
+                "about.v2Title": "የተለያዩ ዘርፎች ተደራሽነት",
+                "about.v2Desc": "በግንባታ፣ በተሽከርካሪ ንግድ እና በእንግዳ ማረፊያ ዘርፍ የተዘረጋ ሰፊ ስራ።",
+                "about.cardLogoAlt": "የዳመነ ባልቻ ኦፊሴላዊ ሎጎ",
+                "about.cardDetailsTitle": "የኮርፖሬት ቢሮ መረጃ",
+                "about.lblStructure": "መዋቅር",
+                "about.valStructure": "ጠቅላላ ንግድ",
+                "about.lblLocation": "አድራሻ",
+                "about.valLocation": "ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "about.lblDivisions": "ንቁ የንግድ ዘርፎች",
+                "about.valDivisions": "4 የንግድ መስመሮች",
+                "bldg.badge": "ዘርፍ አንድ",
+                "bldg.pageTitle": "የግንባታ እና ማጠናቀቂያ እቃዎች ንግድ",
+                "bldg.pageSubtitle": "አቅርቦት፣ ሎጂስቲክስ እና በጅምላ የግንባታ እቃዎች ማቅረብ።",
+                "bldg.logoAlt": "የግንባታ ዘርፍ ሎጎ",
+                "bldg.sec1Title": "ከፍተኛ ጥራት ያላቸው የማጠናቀቂያ እቃዎች",
+                "bldg.sec1Subtitle": "ከፍተኛ ጥራት ያላቸው የማጠናቀቂያ እቃዎች",
+                "bldg.sec2Title": "የግንባታ ጥሬ እቃዎች",
+                "bldg.sec2Subtitle": "ለህንፃ መሰረት እና መዋቅር የሚሆኑ ከፍተኛ ጥራት ያላቸው ጥሬ እቃዎች።",
+                "bldg.sec3Title": "ውጫዊ አቅርቦቶች",
+                "bldg.sec3Subtitle": "የግንባታ ዘርፍ ተሽከርካሪዎች እና ማሽነሪዎች ኪራይ።",
+                "bldg.depotTitle": "የግንባታ እቃዎች መጋዘን አድራሻ",
+                "bldg.depotAddr": "21 ማዞሪያ ቅድስት ማርያም ቤተክርስቲያን መንገድ፣ ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "bldg.btnInquire": "ለጅምላ ትዕዛዝ ይጠይቁ",
+                "prod.porcelainTitle": "የፖርሴሊን የወለል ንጣፎች (60x60 ሴ.ሜ)",
+                "prod.porcelainDesc": "ለመኖሪያ እና ለንግድ ህንፃዎች ወለል የሚሆን ጠንካራ እና ቆሻሻ የማይዝ 60x60 ሴ.ሜ የፖርሴሊን ንጣፍ።",
+                "prod.porcelainAlt": "የፖርሴሊን የወለል ንጣፎች",
+                "prod.opcTitle": "ኦርዲናሪ ፖርትላንድ ሲሚንቶ (42.5N)",
+                "prod.opcDesc": "ለከባድ የህንፃ መዋቅር እና ለኮንክሪት ስራዎች የተሰራ ከፍተኛ ጥንካሬ ያለው 42.5N ሲሚንቶ።",
+                "prod.opcAlt": "ኦርዲናሪ ፖርትላንድ ሲሚንቶ",
+                "prod.ceramicTitle": "የሚያብረቀርቁ የሴራሚክ ግድግዳ ንጣፎች",
+                "prod.ceramicDesc": "ለውስጥ ግድግዳዎች እና ለኩሽና ውበት የሚሰጡ እና በቀላሉ የሚፀዱ የሴራሚክ ንጣፎች።",
+                "prod.ceramicAlt": "የሴራሚክ ግድግዳ ንጣፎች",
+                "prod.sanitaryTitle": "የመታጠቢያ ቤት መፀዳጃ እና የእጅ መታጠቢያ ስብስብ",
+                "prod.sanitaryDesc": "ውሃ ቆጣቢ መፀዳጃዎችን እና ተመሳሳይ የሴራሚክ እጅ መታጠቢያዎችን ያካተተ የተሟላ የሳኒተሪ ስብስብ።",
+                "prod.sanitaryAlt": "የሳኒተሪ መፀዳጃ እና እጅ መታጠቢያ",
+                "prod.plumbingTitle": "የማይዝግ ብረት የውሃ ቧንቧ ቫልቮች እና መገጣጠሚያዎች",
+                "prod.plumbingDesc": "ለአስተማማኝ የውሃ አቅርቦት መስመሮች የሚያገለግሉ ዝገት የሚቋቋሙ የብረት ቫልቮች እና መገጣጠሚያዎች።",
+                "prod.plumbingAlt": "የብረት ቧንቧ ቫልቮች እና መገጣጠሚያዎች",
+                "prod.rebarTitle": "የተጠማዘዘ የብረት ባለ 75 ደረጃ ሪባር",
+                "prod.rebarDesc": "ኮንክሪት ለማጠናከር እና የህንፃ ተሸካሚነትን ለማሻሻል የሚያገለግል ከፍተኛ ጥንካሬ ያለው የብረት ዘንግ።",
+                "prod.rebarAlt": "የተጠማዘዘ የብረት ባለ 75 ደረጃ ሪባር",
+                "prod.bldgMatTitle": "የግንባታ እቃዎች",
+                "prod.bldgMatDesc": "ለህንፃ እና ለመሰረተ ልማት ፕሮጀክቶች የሚያስፈልጉ እንደ ሲሚንቶ፣ አሸዋ፣ ጠጠር እና ብሎኬት ያሉ አስፈላጊ የግንባታ አቅርቦቶች።",
+                "prod.bldgMatAlt": "የግንባታ እቃዎች",
+                "prod.cablesTitle": "የኤሌክትሪክ ገመዶች እና ሽቦዎች",
+                "prod.cablesDesc": "በመኖሪያ፣ በንግድ እና በኢንዱስትሪ ተቋማት ውስጥ የኤሌክትሪክ ኃይልን በደህና የሚያስተላልፉ መስመሮች።",
+                "prod.cablesAlt": "የኤሌክትሪክ ገመዶች እና ሽቦዎች",
+                "prod.paintsTitle": "ቀለሞች / ጆተን ቀለሞች",
+                "prod.paintsDesc": "ለገጽታዎች ውበት የሚሰጡ እና ከአየር ሁኔታና ከአለቃቅ የሚጠብቁ የጌጣጌጥ እና የጥበቃ ቀለሞች።",
+                "prod.paintsAlt": "ቀለሞች እና የጆተን ቀለሞች",
+                "prod.alumTitle": "የአሉሚኒየም ፕሮፋይሎች",
+                "prod.alumDesc": "ለምስኮቶች፣ ለደጆች፣ ለፊት ገፅታዎች እና ለህንፃ ጌጣጌጦች የሚያገለግሉ ቀላል እና ዘላቂ የአሉሚኒየም ክፍሎች።",
+                "prod.alumAlt": "የአሉሚኒየም ፕሮፋይሎች",
+                "prod.graniteTitle": "ግራናይት እና ማርብል",
+                "prod.graniteDesc": "ለወለል፣ ለኮንተር፣ ለግድግዳ ሽፋን እና ለጌጣጌጥ የሚያገለግሉ በጠንካራነታቸውና በውበታቸው የሚታወቁ ተፈጥሯዊ ድንጋዮች።",
+                "prod.graniteAlt": "የግራናይት እና ማርብል ሰሌዳዎች",
+                "prod.waterproofTitle": "የውሃ መከላከያ መፍትሄዎች",
+                "prod.waterproofDesc": "ህንፃዎችን ከውሃ ፍሳሽ እና ከእርጥበት ጉዳት የሚጠብቁ የውሃ መከላከያ ሽፋኖች እና ቅባቶች።",
+                "prod.waterproofAlt": "የውሃ መከላከያ መፍትሄዎች",
+                "raw.sandTitle": "የወንዝ አሸዋ እና ጠጠር",
+                "raw.sandDesc": "ለግንባታ እና ለኮንክሪት ማደባለቂያ የሚሆን የተመረጠ የወንዝ አሸዋ እና የፕላስተር አሸዋ።",
+                "raw.sandAlt": "አሸዋ",
+                "raw.stoneTitle": "ባሳልት ድንጋይ",
+                "raw.stoneDesc": "ለህንፃ መሰረት እና ለከባድ ኮንክሪት ሙሌት የሚሆን የተሰበረ ድንጋይ።",
+                "raw.stoneAlt": "ድንጋይ",
+                "raw.pebblesTitle": "የኮንክሪት ጠጠር",
+                "raw.pebblesDesc": "ኮንክሪት ለማደባለቅ የሚያገለግል የተሰበረ ጠጠር።",
+                "raw.pebblesAlt": "ጠጠር",
+                "raw.cementTitle": "የግንባታ ሲሚንቶ",
+                "raw.cementDesc": "ለግንባታ እና ለኮንክሪት ሙሌት የሚሆን ከፍተኛ ጥራት ያለው የግንባታ ሲሚንቶ።",
+                "raw.cementAlt": "የግንባታ ሲሚንቶ",
+                "raw.blocksTitle": "ድፍን የኮንክሪት ብሎኬቶች",
+                "raw.blocksDesc": "ለጠንካራ ግድግዳዎች እና ክፍልፋዮች የሚሆኑ ከፍተኛ ጥንካሬ ያላቸው ድፍን ብሎኬቶች።",
+                "raw.blocksAlt": "ድፍን የኮንክሪት ብሎኬቶች",
+                "ext.truckTitle": "የግንባታ ዳምፕ ትራክ",
+                "ext.truckDesc": "ኃይለኛ የግንባታ ተሽከርካሪዎች ኪራይ አገልግሎት",
+                "ext.truckAlt": "የግንባታ ዳምፕ ትራክ",
+                "ext.loaderTitle": "ዊል ሎደር (ሎደር)",
+                "ext.loaderDesc": "ከባድ የግንባታ ሎደር ማሽን",
+                "ext.loaderAlt": "ዊል ሎደር",
+                "lbl.location": "አድራሻ",
+                "lbl.directLine": "ቀጥታ ስልክ",
+                "lbl.address": "አድራሻ",
+                "lbl.portal": "ኦፊሴላዊ ዌብሳይት",
+                "lbl.phone": "ስልክ ቁጥር",
+                "lbl.email": "ኢሜይል",
+                "lbl.showroomAddr": "የሾውሩም አድራሻ",
+                "lbl.callUs": "ደውሉልን",
+                "lbl.vehShowroom": "የተሽከርካሪ ማሳያ ቦታ",
+                "lbl.salesDesk": "የሽያጭ ክፍል",
+                "guest.badge": "ዘርፍ ሁለት",
+                "guest.pagetitle": "ዶጃሞ የእንግዳ ማረፊያ",
+                "guest.pageSubtitle": "ምቹ የእንግዳ ማረፊያ እና የእንግዳ ተቀባይነት አገልግሎቶች።",
+                "guest.logoAlt": "የዶጃሞ የእንግዳ ማረፊያ ሎጎ",
+                "guest.welcomeTitle": "ሙቅ የእንግዳ ተቀባይነት ልምድ",
+                "guest.welcomeDesc": "ዶጃሞ የእንግዳ ማረፊያ በኢትዮጵያ ለሚመጡ የድርጅት እንግዶች፣ ለአለም አቀፍ ተጓዦች እና ለረጅም ጊዜ ነዋሪዎች ሰላማዊ እና ሙሉ በሙሉ የተሟላ ማረፊያ ያቀርባል።",
+                "guest.btnBook": "አሁን ይዘዙ",
+                "guest.roomAlt1": "የእንግዳ ሀውስ ክፍሎች",
+                "guest.roomAlt2": "የእንግዳ ሀውስ ክፍሎች",
+                "guest.galleryBadge": "የፎቶ ጉብኝት",
+                "guest.galleryTitle": "የመኝታ ክፍሎች እና የማረፊያ ጋለሪ",
+                "guest.gallerySubtitle": "የተረጋጉ ክፍሎቻችንን እና የእንግዳ መቀበያ ቦታዎቻችንን ለማየት ካርዶቹን ይጫኑ።",
+                "guest.galCap1": "የክብር እንግዳ ክፍል",
+                "guest.galCap2": "ነፋሻማ የጠዋት አየር",
+                "guest.galCap3": "ምቹ እና ጥራት ያለው መኝታ",
+                "guest.galCap4": "የዶጃሞ እንግዳ ተቀባይነት",
+                "guest.galCap5": "ሰላማዊ እና ፅዱ ግቢ ",
+                "guest.galCap6": "ንፁህ የጥጥ አንሶላዎች እና ፎጣዎች",
+                "guest.galCap7": "ዘመናዊ የመታጠቢያ ቤት አገልግሎቶች",
+                "guest.mapTitle": "የዶጃሞ የእንግዳ ማረፊያ ካርታ እና አድራሻ",
+                "guest.addr": "ሶዶ ማረሚያ ቤት መንገድ፣ ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "phoenix.badge": "የኮርፖሬት ወኪልነት",
+                "phoenix.pagetitle": "ፊኒክስ የቤት ቁሳቁሶች",
+                "phoenix.pageSubtitle": "ህጋዊ የንግድ ወኪልነት ስምምነት።",
+                "phoenix.logoAlt": "የፊኒክስ ወኪልነት ሎጎ",
+                "phoenix.noticeScope": "የወኪልነት ወሰን",
+                "phoenix.noticeTitle": "ራሱን የቻለ ድርጅት ወኪልነት ማስታወቂያ",
+                "phoenix.noticeText1": "ዳመነ ባልቻ ጠቅላላ ንግድ",
+                "phoenix.noticeText2": "በተፈቀደ የኮርፖሬት ወኪልነት ስምምነት ይወክላል። ፊኒክስ የቤት እቃዎች ራሱን የቻለ የንግድ ድርጅት እንጂ የዳመነ ባልቻ አካል አይደለም።",
+                "phoenix.secTitle": "የመኝታ እና የባዝሩም እቃዎች",
+                "phoenix.secSubtitle": "ምቹ የመኝታ እቃዎች፣ የጌጣጌጥ ምንጣፎች እና ጠቃሚ የባዝሩም እቃዎች።",
+                "phoenix.mapTitle": "የፊኒክስ ሾውሩም አድራሻ እና ቢሮ",
+                "phoenix.addr": "ጉተራ መንገድ፣ የውሃ ልማት ድርጅት ህንፃ ስር፣ ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "hm.mattressTitle": "ከፍተኛ ጥራት ያለው ፍራሽ",
+                "hm.mattressDesc": "ምቹ እና እረፍት የሚሰጥ እንቅልፍን ለማረጋገጥ የተሰራ ጥራት ያለው ፍራሽ።",
+                "hm.mattressAlt": "ከፍተኛ ጥራት ያለው ፍራሽ",
+                "hm.pillowsTitle": "ትራሶች",
+                "hm.pillowsDesc": "በእንቅልፍ ወቅት ለራስ እና ለደረት ምቾት የሚሰጡ ለስላሳ ትራሶች።",
+                "hm.pillowsAlt": "ትራሶች",
+                "hm.sheetsTitle": "የጥጥ የአልጋ አንሶላዎች",
+                "hm.sheetsDesc": "አየር የሚያስገቡ እና ለስላሳ የሆኑ የጥጥ አንሶላዎች ለምቹ እንቅልፍ።",
+                "hm.sheetsAlt": "የጥጥ የአልጋ አንሶላዎች",
+                "hm.comforterTitle": "ኮምፎርተሮች (ወፍራም ብርድ ልብሶች)",
+                "hm.comforterDesc": "በሌሊት ወቅት ሙቀት እና ምቾት የሚሰጡ ወፍራም የመኝታ ብርድ ልብሶች።",
+                "hm.comforterAlt": "ኮምፎርተር",
+                "hm.duvetTitle": "የዱቬት ሽፋኖች",
+                "hm.duvetDesc": "ብርድ ልብሶችን ከቆሻሻ የሚጠብቁ እና የመኝታ ክፍልን ውበት የሚያደምቁ ሽፋኖች።",
+                "hm.duvetAlt": "የዱቬት ሽፋን",
+                "hm.foldMatTitle": "የሚታጠፍ ፍራሽ",
+                "hm.foldMatDesc": "ቦታ የማይይዝ፣ ለማስቀመጥ እና ይዞ ለመንቀሳቀስ በጣም አመቺ የሆነ የሚታጠፍ ፍራሽ።",
+                "hm.foldMatAlt": "የሚታጠፍ ፍራሽ",
+                "hm.rugsTitle": "ምንጣፎች",
+                "hm.rugsDesc": "ለማንኛውም ክፍል ሙቀት፣ ምቾት እና ውበት የሚሰጡ የጌጣጌጥ ወለል ምንጣፎች።",
+                "hm.rugsAlt": "የወለል ምንጣፍ",
+                "hm.towelsTitle": "የገላ መታበሻ ፎጣዎች",
+                "hm.towelsDesc": "ከመታጠብ በኋላ ሰውነትን በምቾት ለማድረቅ የተሰሩ ለስላሳ እና ውሃ መጣጭ ፎጣዎች።",
+                "hm.towelsAlt": "የገላ ፎጣዎች",
+                "hm.bathAccTitle": "የባዝሩም እቃዎች",
+                "hm.bathAccDesc": "እንደ ሳሙና ማስቀመጫ፣ ፎጣ መስቀያ እና የጥርስ ብሩሽ ማስቀመጫ ያሉ ፅዳትን እና ምቾትን የሚጨምሩ እቃዎች።",
+                "hm.bathAccAlt": "የባዝሩም እቃዎች",
+                "veh.badge": "ዘርፍ አራት",
+                "veh.pageTitle": "የትራንስፖርት ተሽከርካሪዎች ሽያጭ",
+                "veh.pageSubtitle": "የሁለት እና የሶስት እግር ትራንስፖርት ተሽከርካሪዎች (ሞተር ብስክሌት፣ ባጃጅ) ሽያጭ።",
+                "veh.logoAlt": "የተሽከርካሪ ሽያጭ ሎጎ",
+                "veh.secTitle": "የሚሸጡ የትራንስፖርት ተሽከርካሪዎች",
+                "veh.secSubtitle": "ለግል እና ለንግድ ትራንስፖርት ዝግጁ የሆኑ ተሽከርካሪዎች።",
+                "veh.motosTitle": "ሞተር ብስክሌቶች",
+                "veh.motosDesc": "ለከተማ መልእክት እና ለዕለት ተዕለት ጉዞ የተሰሩ አስተማማኝ ባለ 2 እግር ሞተሮች።",
+                "veh.motosAlt": "ሞተር ብስክሌቶች",
+                "veh.bajajTitle": "ባለ ሶስት እግር ተሽከርካሪዎች (ባጃጅ)",
+                "veh.bajajDesc": "ለሰው እና ለዕቃ ማጓጓዣ የሚሆኑ ከፍተኛ ብቃት ያላቸው ባለ 3 እግር ባጃጆች።",
+                "veh.bajajAlt": "ባለሶስት እግር ባጃጆች",
+                "veh.spareTitle": "የመለዋወጫ እቃዎች ሽያጭ",
+                "veh.spareDesc": "ለሞተር ብስክሌቶች እና ለባለ ሶስት እግር ባጃጆች የሚሆኑ ኦሪጅናል መለዋወጫ እቃዎች እና የሞተር ክፍሎች።",
+                "veh.spareAlt": "የመለዋወጫ እቃዎች ሽያጭ",
+                "veh.mapTitle": "የተሽከርካሪ ሽያጭ መጋዘን አድራሻ እና ስልክ",
+                "veh.showroomAddr": "ጉተራ መንገድ፣ የውሃ ልማት ድርጅት ህንፃ ስር፣ ወላይታ ሶዶ፣ ደቡብ ኢትዮጵያ",
+                "veh.btnInquire": "ተሽከርካሪ ለመግዛት ይጠይቁ",
+                "phoenix.pagetitle": "ፊኒክስ የቤት ቁሳቁሶች",
+                "contact.pageTitle": "ያግኙን",
+                "contact.pageSubtitle": "ከኮርፖሬት ቡድናችን ወይም ከንግድ ዘርፎቻችን ጋር ይገናኙ።",
+                "contact.hqTitle": "ዋና መሥሪያ ቤት",
+                "contact.hqAddr": "ወላይታ ሶዶ፣ ኢትዮጵያ",
+                "contact.formTitle": "መልእክት ይላኩልን",
+                "contact.formSubtitle": "ጥያቄዎን ተገቢው ክፍል እንድናደርስ የንግድ ዘርፉን ይምረጡ።",
+                "contact.lblName": "ሙሉ ስም *",
+                "contact.phName": "ሙሉ ስምዎን ያስገቡ",
+                "contact.lblEmail": "ኢሜይል አድራሻ *",
+                "contact.phEmail": "example@email.com",
+                "contact.lblPhone": "ስልክ ቁጥር *",
+                "contact.phPhone": "+251 ...",
+                "contact.lblDept": "የጥያቄው ዘርፍ *",
+                "contact.optSelect": "የንግድ ዘርፍ ይምረጡ",
+                "contact.optGeneral": "አጠቃላይ ጥያቄ",
+                "contact.lblMsg": "የመልእክቱ ዝርዝር *",
+                "contact.phMsg": "ጥያቄዎን እዚህ ይጻፉ...",
+                "contact.btnSubmit": "መልእክት ላክ",
+                "contact.submitting": "በመላክ ላይ...",
+                "contact.successMsg": "እናመሰግናለን! መልእክትዎ ደርሶናል። ቡድናችን በቅርቡ ያገኝዎታል።",
+                "footer.intro": "ዳመነ ባልቻ ጠቅላላ ንግድ በግንባታ እቃዎች፣ በንግድ እንግዳ ማረፊያ፣ በተሽከርካሪዎች ሽያጭ እና በብራንድ ወኪልነት የሚያገለግል የብዙ ዘርፍ ኩባንያ ነው።",
+                "footer.secDivisions": "የንግድ ዘርፎች",
+                "footer.secNav": "ማውጫ",
+                "footer.secBrands": "የድርጅቱ ብራንዶች",
+                "footer.navHome": "መነሻ ገጽ",
+                "footer.repNoticeLabel": "የወኪልነት ማስታወቂያ:",
+                "footer.repNoticeText": "ፊኒክስ የቤት እቃዎች ከዳመነ ባልቻ ጠቅላላ ንግድ ጋር በገባው የወኪልነት ስምምነት መሰረት የሚሰራ ራሱን የቻለ ድርጅት እንጂ የዳመነ ባልቻ አካል አይደለም።"
+            }
+        };
+
+        let currentLang = localStorage.getItem('app_language') || 'en';
+
+        function switchLanguage(lang) {
+            if (!translations[lang]) return;
+            currentLang = lang;
+            localStorage.setItem('app_language', lang);
+            document.documentElement.lang = lang;
+
+            // Update all elements with data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(elem => {
+                const key = elem.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    elem.textContent = translations[lang][key];
+                }
+            });
+
+            // Update placeholders with data-i18n-placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(elem => {
+                const key = elem.getAttribute('data-i18n-placeholder');
+                if (translations[lang][key]) {
+                    elem.setAttribute('placeholder', translations[lang][key]);
+                }
+            });
+
+            // Update alt text with data-i18n-alt
+            document.querySelectorAll('[data-i18n-alt]').forEach(elem => {
+                const key = elem.getAttribute('data-i18n-alt');
+                if (translations[lang][key]) {
+                    elem.setAttribute('alt', translations[lang][key]);
+                }
+            });
+
+            // Update page meta title & description
+            if (translations[lang]["meta.title"]) {
+                document.title = translations[lang]["meta.title"];
+            }
+
+            // Update active state on language switcher buttons
+            const enBtns = [document.getElementById('lang-btn-en'), document.getElementById('mobile-lang-btn-en')];
+            const amBtns = [document.getElementById('lang-btn-am'), document.getElementById('mobile-lang-btn-am')];
+
+            if (lang === 'am') {
+                enBtns.forEach(btn => {
+                    if (btn) {
+                        btn.classList.remove('bg-navygreen-800', 'text-white', 'shadow-sm');
+                        btn.classList.add('text-slate-600', 'hover:text-navygreen-800');
+                    }
+                });
+                amBtns.forEach(btn => {
+                    if (btn) {
+                        btn.classList.add('bg-navygreen-800', 'text-white', 'shadow-sm');
+                        btn.classList.remove('text-slate-600', 'hover:text-navygreen-800');
+                    }
+                });
+            } else {
+                amBtns.forEach(btn => {
+                    if (btn) {
+                        btn.classList.remove('bg-navygreen-800', 'text-white', 'shadow-sm');
+                        btn.classList.add('text-slate-600', 'hover:text-navygreen-800');
+                    }
+                });
+                enBtns.forEach(btn => {
+                    if (btn) {
+                        btn.classList.add('bg-navygreen-800', 'text-white', 'shadow-sm');
+                        btn.classList.remove('text-slate-600', 'hover:text-navygreen-800');
+                    }
+                });
+            }
+        }
+
+        // Initialize translations on DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            switchLanguage(currentLang);
+        });
+    </script>
+
+    <!-- INTERACTIVE WEBSITE JAVASCRIPT -->
+    <script>
+        // Set dynamic year
+        document.getElementById('year-span').textContent = new Date().getFullYear();
+
+        // Mouse Spotlight Tracking Effect
+        const spotlight = document.getElementById('cursor-spotlight');
+        document.addEventListener('mousemove', (e) => {
+            spotlight.style.left = e.clientX + 'px';
+            spotlight.style.top = e.clientY + 'px';
+        });
+
+        // Hero 10-Second Auto Slideshow (3 slides)
+        let currentSlide = 0;
+        const totalSlides = 3;
+        
+        function setSlide(index) {
+            currentSlide = index;
+            for (let i = 0; i < totalSlides; i++) {
+                const slide = document.getElementById(`slide-${i}`);
+                const dot = document.getElementById(`dot-${i}`);
+                if (slide && dot) {
+                    if (i === index) {
+                        slide.classList.remove('opacity-0');
+                        slide.classList.add('opacity-100');
+                        dot.classList.remove('bg-white/40');
+                        dot.classList.add('bg-terracotta-500');
+                    } else {
+                        slide.classList.remove('opacity-100');
+                        slide.classList.add('opacity-0');
+                        dot.classList.remove('bg-terracotta-500');
+                        dot.classList.add('bg-white/40');
+                    }
+                }
+            }
+        }
+
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            setSlide(currentSlide);
+        }, 10000); // 10 seconds
+
+        // Single Page Navigation Controller
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(sec => sec.classList.add('hidden'));
+
+            const target = document.getElementById('section-' + sectionId);
+            if (target) {
+                target.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            const navButtons = document.querySelectorAll('.nav-link');
+            navButtons.forEach(btn => {
+                btn.classList.remove('text-terracotta-500');
+                btn.classList.add('text-slate-700');
+            });
+
+            const activeBtn = document.getElementById('nav-' + sectionId);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-700');
+                activeBtn.classList.add('text-terracotta-500');
+            }
+
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Dojamo Guest House Overlapping 3D Layered Gallery Logic
+        let dojamoActiveIndex = 3; // Center image starts in foreground
+        const dojamoCards = document.querySelectorAll('.dojamo-gallery-card');
+        const dojamoDots = document.querySelectorAll('.dojamo-dot');
+
+        function updateDojamoGallery() {
+            if (!dojamoCards.length) return;
+            const total = dojamoCards.length;
+            const width = window.innerWidth;
+            const isMobile = width < 640;
+            const isTablet = width >= 640 && width < 1024;
+
+            // Responsive base dimensions for center foreground card
+            const baseW = isMobile ? 210 : (isTablet ? 310 : 400);
+            const baseH = isMobile ? 230 : (isTablet ? 320 : 380);
+            const stepX = isMobile ? 48 : (isTablet ? 95 : 140);
+
+            dojamoCards.forEach((card, idx) => {
+                // Circular offset relative to active center index (-3 to +3)
+                let offset = idx - dojamoActiveIndex;
+                if (offset > Math.floor(total / 2)) offset -= total;
+                if (offset < -Math.floor(total / 2)) offset += total;
+
+                const absOffset = Math.abs(offset);
+                const scale = Math.max(0.58, 1 - absOffset * 0.13);
+                const translateX = offset * stepX;
+                const translateY = absOffset * (isMobile ? 8 : 14); // Staggered vertical depth
+                const rotateY = offset * -6;
+                const zIndex = 40 - absOffset * 10;
+                const opacity = absOffset > 3 ? 0 : Math.max(0.45, 1 - absOffset * 0.18);
+
+                card.style.width = `${baseW}px`;
+                card.style.height = `${baseH}px`;
+                card.style.zIndex = zIndex;
+                card.style.opacity = opacity;
+                card.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale(${scale}) perspective(1000px) rotateY(${rotateY}deg)`;
+
+                const caption = card.querySelector('.card-caption');
+                if (caption) {
+                    caption.style.opacity = offset === 0 ? '1' : '0';
+                }
+            });
+
+            dojamoDots.forEach((dot, idx) => {
+                if (idx === dojamoActiveIndex) {
+                    dot.classList.remove('w-2.5', 'bg-cream-200');
+                    dot.classList.add('w-6', 'bg-terracotta-500');
+                } else {
+                    dot.classList.remove('w-6', 'bg-terracotta-500');
+                    dot.classList.add('w-2.5', 'bg-cream-200');
+                }
+            });
+        }
+
+        function rotateDojamoGallery(dir) {
+            const total = dojamoCards.length;
+            dojamoActiveIndex = (dojamoActiveIndex + dir + total) % total;
+            updateDojamoGallery();
+        }
+
+        function focusDojamoCard(index) {
+            dojamoActiveIndex = index;
+            updateDojamoGallery();
+        }
+
+        // Subtle hover elevation for background cards
+        dojamoCards.forEach((card, idx) => {
+            card.addEventListener('mouseenter', () => {
+                if (idx !== dojamoActiveIndex) {
+                    card.style.filter = 'brightness(1.06)';
+                }
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.filter = '';
+            });
+        });
+
+        // Touch swipe support for mobile users
+        const galleryContainer = document.getElementById('dojamo-layered-gallery');
+        let touchStartX = 0;
+        if (galleryContainer) {
+            galleryContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            galleryContainer.addEventListener('touchend', (e) => {
+                const touchEndX = e.changedTouches[0].screenX;
+                if (touchStartX - touchEndX > 40) rotateDojamoGallery(1);
+                if (touchEndX - touchStartX > 40) rotateDojamoGallery(-1);
+            }, { passive: true });
+        }
+
+        window.addEventListener('resize', updateDojamoGallery);
+        document.addEventListener('DOMContentLoaded', updateDojamoGallery);
+
+        // Form Submit Handler
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(event) {
+                const submitBtn = document.getElementById('submit-btn');
+                const alertBox = document.getElementById('form-alert');
+                
+                const submittingTxt = translations[currentLang]["contact.submitting"] || "Processing...";
+                const successTxt = translations[currentLang]["contact.successMsg"] || "Thank you! Your inquiry has been submitted. Our team will get back to you shortly.";
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> ${submittingTxt}`;
+
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    const btnTxt = translations[currentLang]["contact.btnSubmit"] || "Submit Inquiry";
+                    submitBtn.innerHTML = `<i class="fa-regular fa-paper-plane"></i> ${btnTxt}`;
+                    
+                    alertBox.classList.remove('hidden', 'bg-red-50', 'text-red-800');
+                    alertBox.classList.add('bg-emerald-50', 'text-emerald-800', 'border', 'border-emerald-200');
+                    alertBox.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-600 mr-1.5"></i> ${successTxt}`;
+                    
+                    setTimeout(() => {
+                        alertBox.classList.add('hidden');
+                    }, 6000);
+                }, 1200);
+            });
+        }
+    </script>
+</body>
+</html>
